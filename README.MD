@@ -9,7 +9,7 @@ Generation of a publication-grade genome assembly for Strain Pseudo and determin
 - Size: 2,617,187 bp 
 - GC: 59.52%
 - Proteins (TYGS): 2,593
-From Quast using Flye since best overall stats from all assemblies tried:
+### From Quast using Flye since best overall stats from all assemblies tried:
 * contigs (>= 0 bp)         6             
 * contigs (>= 1000 bp)      6             
 * contigs (>= 5000 bp)      5             
