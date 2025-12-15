@@ -9,6 +9,29 @@ Generation of a publication-grade genome assembly for Strain Pseudo and determin
 - Size: 2,617,187 bp 
 - GC: 59.52%
 - Proteins (TYGS): 2,593
+From Quast using Flye since best overall stats from all assemblies tried:
+* contigs (>= 0 bp)         6             
+* contigs (>= 1000 bp)      6             
+* contigs (>= 5000 bp)      5             
+* contigs (>= 10000 bp)     4             
+* contigs (>= 25000 bp)     4             
+* contigs (>= 50000 bp)     4             
+* Total length (>= 0 bp)      2575873       
+* Total length (>= 1000 bp)   2575873       
+* Total length (>= 5000 bp)   2574659       
+* Total length (>= 10000 bp)  2564710       
+* Total length (>= 25000 bp)  2564710       
+* Total length (>= 50000 bp)  2564710       
+* contigs                   6             
+* Largest contig              1329041       
+* Total length                2575873       
+* GC (%)                      59.68         
+* N50                         1329041       
+* N90                         1018847       
+* auN                         1098850.5     
+* L50                         1             
+* L90                         2             
+* N's per 100 kbp           0.00
 
 ## Genome Quality (CheckM) 
 - 98.66% Completeness 
