@@ -128,7 +128,7 @@ reference guided briding using a close reference based closed genome - however a
 
 # Why does IJSEM using Type Strains as a reference point when settling for novelty for genus/species?
 
-IJSEM is a journal that records and validates prokaryotic names under the rules of nomenclature and the name of a spcies is anchored to its nomenclatural type for bacteria, that is usually a living strain which is the type strain that is perserved and accessible to the community to use. That's why comparisons to type strains or the type species' type strains when making genus level decisions if its novel or not is the community standard for "what this name actually refers to." Having a novel species/genus claim that are framed as "compared to the closest type strain" because that is metric used that fixes the name in a reproducible way. 
+IJSEM is a journal that records and validates prokaryotic names under the rules of nomenclature provided by the international code of nomeclature of prokaryotes ICNP, recommending authors to follow this format when naming, and the name of a spcies is anchored to its nomenclatural type for bacteria, that is usually a living strain which is the type strain that is perserved and accessible to the community to use. That's why comparisons to type strains or the type species' type strains when making genus level decisions if its novel or not is the community standard for "what this name actually refers to." Having a novel species/genus claim that are framed as "compared to the closest type strain" because that is metric used that fixes the name in a reproducible way. 
 
 
 
