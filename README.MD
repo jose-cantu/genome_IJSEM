@@ -64,7 +64,11 @@ My interpreatation from getting these stats: weak/ambigious bridging signal here
 3) If closure is truly impossible ~ likely given the dataset thus far then a solid option would be to proceed with the high quality draft of 5/6 contigs since they meet the criteria that the Journal species - so then comes a question is briding truly necessary if the requirements are already met for the Journal? A high quaity draft is better than using the last resort of trying to bridge the repeat regions with a separate organism since that bias all the reads already given and risks it being a chimeric genome. 
 
 ### Decision NOte 
-Closing the genome is not stricly required given the genome already meets the criteria specified. 
+Closing the genome is not stricly required given the genome already meets the criteria specified thus far. I will include the rest of the values and figures IJSEM specifies. In IJSEM own words: "While the ideal is to have a closed genome, in most circumstances this is not
+possible or cost-efficient, resulting in contigs of various lengths. Very short contigs are usually excluded from the final assemblies.
+However, as there is not a clear standard on how to select contigs, the absolute number of contigs is not a really good quality
+indicator. Indices like the N50 (length of the shortest contig that accumulatively show 50% or more of the genome size) or L50
+(smallest number of contigs that sums half of genome size) give better assessment of the genome quality."  
 
 ## Taxonomy & Novelty Evidence (Based on IJSEM Criteria) 
 
