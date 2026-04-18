@@ -1,0 +1,23 @@
+Assembly	assembly.polished
+# contigs (>= 0 bp)	343
+# contigs (>= 1000 bp)	11
+# contigs (>= 5000 bp)	7
+# contigs (>= 10000 bp)	6
+# contigs (>= 25000 bp)	6
+# contigs (>= 50000 bp)	6
+Total length (>= 0 bp)	2617187
+Total length (>= 1000 bp)	2595695
+Total length (>= 5000 bp)	2588085
+Total length (>= 10000 bp)	2580973
+Total length (>= 25000 bp)	2580973
+Total length (>= 50000 bp)	2580973
+# contigs	16
+Largest contig	1154170
+Total length	2599458
+GC (%)	59.56
+N50	641782
+N90	174400
+auN	749451.4
+L50	2
+L90	4
+# N's per 100 kbp	0.00
