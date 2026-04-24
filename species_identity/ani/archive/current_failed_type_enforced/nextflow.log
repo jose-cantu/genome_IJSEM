@@ -1,0 +1,275 @@
+Oct-15 18:53:34.409 [main] DEBUG nextflow.cli.Launcher - $> nextflow -c ani_current_workflow.conf -log ./logs/nextflow.log run ani_current_workflow.nf -resume -profile standard --sample Pseudo --asm ../data/assembly.polished.fasta --class_summary ../data/gtdbtk.bac120.summary.tsv
+Oct-15 18:53:34.626 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+Oct-15 18:53:34.699 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/u233451/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
+Oct-15 18:53:34.715 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Oct-15 18:53:34.716 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Oct-15 18:53:34.720 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Oct-15 18:53:34.751 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Oct-15 18:53:34.787 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /mount/britton/Jose/Jobs/Jason/2025-09-30-obtain-ANI-results-type-strain-nextflow-run/workflow/ani_current_workflow.conf
+Oct-15 18:53:34.789 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /mount/britton/Jose/Jobs/Jason/2025-09-30-obtain-ANI-results-type-strain-nextflow-run/workflow/ani_current_workflow.conf
+Oct-15 18:53:34.843 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Oct-15 18:53:35.893 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+Oct-15 18:53:35.982 [main] INFO  nextflow.cli.CmdRun - Launching `ani_current_workflow.nf` [agitated_ardinghelli] DSL2 - revision: cd15067ea9
+Oct-15 18:53:35.983 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Oct-15 18:53:35.983 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Oct-15 18:53:36.002 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/u233451/.nextflow/secrets/store.json
+Oct-15 18:53:36.007 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@714f3da4] - activable => nextflow.secret.LocalSecretsProvider@714f3da4
+Oct-15 18:53:36.108 [main] DEBUG nextflow.Session - Session UUID: 9a51a50e-538e-4db4-8f1e-f7e58c9158af
+Oct-15 18:53:36.108 [main] DEBUG nextflow.Session - Run name: agitated_ardinghelli
+Oct-15 18:53:36.108 [main] DEBUG nextflow.Session - Executor pool size: 2
+Oct-15 18:53:36.119 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Oct-15 18:53:36.211 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.10.1 build 5891
+  Created: 12-01-2024 22:01 UTC (16:01 CDT)
+  System: Linux 3.10.0-1160.119.1.el7.x86_64
+  Runtime: Groovy 3.0.19 on OpenJDK 64-Bit Server VM 21-internal-adhoc.conda.src
+  Encoding: UTF-8 (UTF-8)
+  Process: 30634@compute-9-10.mab [192.168.5.110]
+  CPUs: 2 - Mem: 16 GB (15.7 GB) - Swap: 0 (0) - Virtual threads ON
+Oct-15 18:53:36.334 [main] DEBUG nextflow.Session - Work-dir: /mount/britton/Jose/Jobs/Jason/2025-09-30-obtain-ANI-results-type-strain-nextflow-run/workflow-output/work [nfs]
+Oct-15 18:53:36.335 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /mount/britton/Jose/Jobs/Jason/2025-09-30-obtain-ANI-results-type-strain-nextflow-run/workflow/bin
+Oct-15 18:53:36.346 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Oct-15 18:53:36.363 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Oct-15 18:53:36.422 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Oct-15 18:53:36.470 [main] DEBUG nextflow.util.CustomPoolFactory - Creating virtual thread pool
+Oct-15 18:53:36.680 [main] DEBUG nextflow.Session - Session start
+Oct-15 18:53:37.701 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-15 18:53:37.926 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-15 18:53:37.927 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-15 18:53:37.933 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Oct-15 18:53:37.943 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=2; memory=16 GB; capacity=2; pollInterval=100ms; dumpInterval=5m
+Oct-15 18:53:37.945 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Oct-15 18:53:38.074 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-15 18:53:38.075 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-15 18:53:38.088 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-15 18:53:38.088 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-15 18:53:38.091 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: BUILD_FASTANI_PANEL, FASTANI_BATCH, FASTANI_ANNOTATE_TYPES
+Oct-15 18:53:38.091 [main] DEBUG nextflow.Session - Igniting dataflow network (6)
+Oct-15 18:53:38.093 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > BUILD_FASTANI_PANEL
+Oct-15 18:53:38.102 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FASTANI_BATCH
+Oct-15 18:53:38.111 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FASTANI_ANNOTATE_TYPES
+Oct-15 18:53:38.112 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_9c3b4ae6ed294b1b: /mount/britton/Jose/Jobs/Jason/2025-09-30-obtain-ANI-results-type-strain-nextflow-run/workflow/ani_current_workflow.nf
+Oct-15 18:53:38.112 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Oct-15 18:53:38.113 [main] DEBUG nextflow.Session - Session await
+Oct-15 18:53:38.444 [Actor Thread 14] DEBUG nextflow.conda.CondaCache - conda found local env for environment=/mount/britton/Jose/conda-envs/ncbi_datasets; path=/mount/britton/Jose/conda-envs/ncbi_datasets
+Oct-15 18:53:38.554 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-15 18:53:38.556 [Task submitter] INFO  nextflow.Session - [18/884520] Submitted process > BUILD_FASTANI_PANEL (Pseudo)
+Oct-15 18:53:53.883 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: BUILD_FASTANI_PANEL (Pseudo); status: COMPLETED; exit: 1; error: -; workDir: /mount/britton/Jose/Jobs/Jason/2025-09-30-obtain-ANI-results-type-strain-nextflow-run/workflow-output/work/18/884520d8c0099a8763e8e099032d92]
+Oct-15 18:53:53.889 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=BUILD_FASTANI_PANEL (Pseudo); work-dir=/mount/britton/Jose/Jobs/Jason/2025-09-30-obtain-ANI-results-type-strain-nextflow-run/workflow-output/work/18/884520d8c0099a8763e8e099032d92
+  error [nextflow.exception.ProcessFailedException]: Process `BUILD_FASTANI_PANEL (Pseudo)` terminated with an error exit status (1)
+Oct-15 18:53:53.935 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'BUILD_FASTANI_PANEL (Pseudo)'
+
+Caused by:
+  Process `BUILD_FASTANI_PANEL (Pseudo)` terminated with an error exit status (1)
+
+Command executed:
+
+  # 0) Prepare output directories
+  mkdir -p panel meta
+  
+  # 1) Try NCBI “type material” discovery by taxon first
+  if [[ "true" == "true" ]]; then
+    : > accessions.type.txt
+    # Extract genus (g__ token) and family from the GTDB classification column
+    PY=""
+    for cand in "/usr/bin/python" python3 python /usr/bin/python3 /usr/bin/python /usr/local/bin/python3 /usr/local/bin/python; do
+     [[ -z "$cand" ]] && continue
+     if command -v "$cand" >/dev/null 2>&1; then PY="$(command -v "$cand")"; break; fi
+     [[ -x "$cand" ]] && { PY="$cand"; break; }
+    done
+    [[ -z "$PY" ]] && { echo "FATAL: no Python interpreter on PATH (tried params.python, python3/python)"; exit 127; }
+    echo "USING PY: $PY" >&2
+    read iso_genus iso_family < <( "$PY" "/mount/britton/Jose/Jobs/Jason/2025-09-30-obtain-ANI-results-type-strain-nextflow-run/workflow/gtdb_tax_tokens.py" "gtdbtk.bac120.summary.tsv" ) # parse tokens once ......  
+  
+    echo "TYPE-SCAN genus=${iso_genus:-NA} family=${iso_family:-NA}" >&2
+  
+    if [[ -n "${iso_genus:-}" ]]; then
+      # Query NCBI for type-material assemblies in this genus (limit by fastani_max_refs)
+      datasets summary genome taxon "${iso_genus}" --from-type --report genome --as-json-lines | jq -r '.. | objects | .accession? // .assembly?.accession? // empty' | grep -E '^GC[AF]_' | sort -u | head -n 20 > accessions.type.txt || true
+    fi
+  
+    # If genus yielded none, try family-level type material (e.g., Oscillospiraceae)   
+    if [[ ! -s accessions.type.txt && -n "${iso_family:-}" ]]; then
+        datasets summary genome taxon "${iso_family}" --from-type --report genome --as-json-lines | jq -r '.. | objects | .accession? // .assembly?.accession? // empty' | grep -E '^GC[AF]_' | sort -u | head -n 20 > accessions.type.txt || true 
+    fi 
+  
+    echo "TYPE-SCAN found $( [ -s accessions.type.txt ] && wc -l < accessions.type.txt || echo 0 ) candidates" >&2
+    # If we found any type-material accessions, download and use them
+    if [[ -s accessions.type.txt ]]; then
+      while read -r acc; do
+        [[ -z "$acc" ]] && continue
+        datasets summary genome accession "$acc" --as-json-lines > "meta/${acc}.jsonl" || true
+        datasets download genome accession "$acc" --include genome --filename "${acc}.zip" || continue
+        unzip -oq "${acc}.zip" -d "${acc}" || true
+        f=$(find "${acc}/ncbi_dataset/data" -type f \( -name "*_genomic.fna" -o -name "*.fna" \) | head -n1 || true)
+        [[ -n "$f" ]] && cp -f "$f" "panel/${acc}.fna" 
+        rm -rf "${acc}.zip" "${acc}"
+      done < accessions.type.txt
+      if compgen -G "panel/*.fna" > /dev/null; then
+        realpath panel/*.fna > refs.txt
+        exit 0
+      fi
+    fi
+  fi
+  
+  # 2) Fall back to GTDB neighbours (original logic)
+  awk -F '\t' '
+    function emit_token(tok,    p,acc) {
+      p = index(tok,"GCF_"); if (!p) p = index(tok,"GCA_");
+      if (p) {
+        acc = substr(tok,p)
+        sp = index(acc," "); cm = index(acc,","); sc = index(acc,";"); cut = 0
+        if (sp && (!cut || sp<cut)) cut = sp
+        if (cm && (!cut || cm<cut)) cut = cm
+        if (sc && (!cut || sc<cut)) cut = sc
+        if (cut) acc = substr(acc,1,cut-1)
+        if (index(acc,".")>0) print acc
+      }
+    }
+    NR==1{
+      for (i=1;i<=NF;i++) h[$i]=i
+      pr = 0
+      if (h["fastani_reference"])                 pr = h["fastani_reference"]
+      else if (h["closest_placement_reference"])  pr = h["closest_placement_reference"]
+      else if (h["closest_reference"])            pr = h["closest_reference"]
+      else if (h["closest_genome"])               pr = h["closest_genome"]
+      orr = 0
+      if (h["other_related_references(genome_id,species_name,radius,ANI,AF)"])
+           orr = h["other_related_references(genome_id,species_name,radius,ANI,AF)"]
+      else if (h["other_related_references"])
+           orr = h["other_related_references"]
+      next
+    }
+    {
+      if (pr  && $pr!=""  && $pr!="NA")  emit_token($pr)
+      if (orr && $orr!="" && $orr!="NA") {
+          s = $orr; gsub(",", " ", s); gsub(";", " ", s)
+          n = split(s,a," ")
+          for (i=1;i<=n;i++) if (a[i]!="") emit_token(a[i])
+      }
+    }
+  ' "gtdbtk.bac120.summary.tsv" | sort -u | head -n 20 > accessions.txt
+  
+  # Download the GTDB neighbour accessions
+  while read -r acc; do
+    datasets summary genome accession "$acc" --as-json-lines > "meta/${acc}.jsonl" || true
+    datasets download genome accession "$acc" --include genome --filename "${acc}.zip" || continue
+    unzip -oq "${acc}.zip" -d "${acc}" || true
+    f=$(find "${acc}/ncbi_dataset/data" -type f \( -name "*_genomic.fna" -o -name "*.fna" \) | head -n1 || true)
+    if [[ -n "$f" ]]; then
+      cp -f "$f" "panel/${acc}.fna"
+    fi
+    rm -rf "${acc}.zip" "${acc}"
+  done < accessions.txt
+  
+  # 3) Build TYPE and ALL lists, then enforce require/prefer policies
+  : > refs.all.txt
+  : > refs.type.txt
+  if compgen -G "panel/*.fna" > /dev/null; then
+    while read -r acc; do
+      f="panel/${acc}.fna"; [[ -s "$f" ]] || continue
+      p=$(realpath "$f"); echo "$p" >> refs.all.txt
+      if jq -er '.assembly_info.relation_to_type_material // empty | ascii_downcase | test("type")' "meta/${acc}.jsonl" > /dev/null 2>&1; then
+        echo "$p" >> refs.type.txt
+      fi
+    done < accessions.txt
+  fi
+  
+  if [[ "true" == "true" ]]; then
+    if [[ -s refs.type.txt ]]; then
+      sort -u refs.type.txt > refs.txt
+    else
+      echo "ERROR: No 'type material' genomes found among GTDB neighbours." >&2
+      : > refs.txt
+      exit 1
+    fi
+  elif [[ "true" == "true" && -s refs.type.txt ]]; then
+    sort -u refs.type.txt > refs.txt
+  elif [[ -s refs.all.txt ]]; then
+    sort -u refs.all.txt > refs.txt
+  else
+    : > refs.txt
+  fi
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  Downloading: GCF_900169975.1.zip    32.8kB 210kB/s
+  [1A[2K[1A[2KCollecting 1 genome record [================================================] 100% 1/1
+  Downloading: GCF_900169975.1.zip    32.8kB 210kB/s
+  [1A[2K[1A[2KCollecting 1 genome record [================================================] 100% 1/1
+  Downloading: GCF_900169975.1.zip    65.5kB 331kB/s
+  [1A[2K[1A[2KCollecting 1 genome record [================================================] 100% 1/1
+  Downloading: GCF_900169975.1.zip    65.5kB 331kB/s
+  [1A[2K[1A[2KCollecting 1 genome record [================================================] 100% 1/1
+  Downloading: GCF_900169975.1.zip    65.5kB 331kB/s
+  [1A[2K[1A[2KCollecting 1 genome record [================================================] 100% 1/1
+  Downloading: GCF_900169975.1.zip    65.5kB 331kB/s
+  [1A[2K[1A[2KCollecting 1 genome record [================================================] 100% 1/1
+  Downloading: GCF_900169975.1.zip    131kB 546kB/s
+  [1A[2K[1A[2KCollecting 1 genome record [================================================] 100% 1/1
+  Downloading: GCF_900169975.1.zip    197kB 812kB/s
+  [1A[2K[1A[2KCollecting 1 genome record [================================================] 100% 1/1
+  Downloading: GCF_900169975.1.zip    197kB 812kB/s
+  [1A[2K[1A[2KCollecting 1 genome record [================================================] 100% 1/1
+  Downloading: GCF_900169975.1.zip    197kB 812kB/s
+  [1A[2K[1A[2KCollecting 1 genome record [================================================] 100% 1/1
+  Downloading: GCF_900169975.1.zip    262kB 930kB/s
+  [1A[2K[1A[2KCollecting 1 genome record [================================================] 100% 1/1
+  Downloading: GCF_900169975.1.zip    426kB 1.5MB/s
+  [1A[2K[1A[2KCollecting 1 genome record [================================================] 100% 1/1
+  Downloading: GCF_900169975.1.zip    426kB 1.5MB/s
+  [1A[2K[1A[2KCollecting 1 genome record [================================================] 100% 1/1
+  Downloading: GCF_900169975.1.zip    426kB 1.5MB/s
+  [1A[2K[1A[2KCollecting 1 genome record [================================================] 100% 1/1
+  Downloading: GCF_900169975.1.zip    492kB 1.52MB/s
+  [1A[2K[1A[2KCollecting 1 genome record [================================================] 100% 1/1
+  Downloading: GCF_900169975.1.zip    885kB 2.71MB/s
+  [1A[2K[1A[2KCollecting 1 genome record [================================================] 100% 1/1
+  Downloading: GCF_900169975.1.zip    885kB 2.71MB/s
+  [1A[2K[1A[2KCollecting 1 genome record [================================================] 100% 1/1
+  Downloading: GCF_900169975.1.zip    885kB 2.71MB/s
+  [1A[2K[1A[2KCollecting 1 genome record [================================================] 100% 1/1
+  Downloading: GCF_900169975.1.zip    885kB 2.71MB/s
+  [1A[2K[1A[2KCollecting 1 genome record [================================================] 100% 1/1
+  Downloading: GCF_900169975.1.zip    923kB done
+  Validating package []
+  [1A[2K[1A[2K[1A[2KCollecting 1 genome record [================================================] 100% 1/1
+  Downloading: GCF_900169975.1.zip    923kB done
+  Validating package files [==================>-----------------------------]  40% 2/5
+  [1A[2K[1A[2K[1A[2KCollecting 1 genome record [================================================] 100% 1/1
+  Downloading: GCF_900169975.1.zip    923kB done
+  Validating package files [==================>-----------------------------]  40% 2/5
+  [1A[2K[1A[2K[1A[2KCollecting 1 genome record [================================================] 100% 1/1
+  Downloading: GCF_900169975.1.zip    923kB valid data package
+  Validating package files [================================================] 100% 5/5
+  ERROR: No 'type material' genomes found among GTDB neighbours.
+
+Work dir:
+  /mount/britton/Jose/Jobs/Jason/2025-09-30-obtain-ANI-results-type-strain-nextflow-run/workflow-output/work/18/884520d8c0099a8763e8e099032d92
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+Oct-15 18:53:53.948 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Process `BUILD_FASTANI_PANEL (Pseudo)` terminated with an error exit status (1)
+Oct-15 18:53:53.966 [Task monitor] DEBUG nextflow.Session - The following nodes are still active:
+[process] FASTANI_BATCH
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] FASTANI_ANNOTATE_TYPES
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+Oct-15 18:53:53.980 [main] DEBUG nextflow.Session - Session await > all processes finished
+Oct-15 18:53:53.982 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Oct-15 18:53:53.991 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=15.2s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Oct-15 18:53:54.015 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Oct-15 18:53:54.072 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Oct-15 18:53:54.100 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

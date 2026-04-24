@@ -1,0 +1,61 @@
+/mount/britton/Jose/conda-envs/quast/bin/quast -o quast -t 8 assembly.polished.fasta
+
+Version: 5.3.0
+
+System information:
+  OS: Linux-3.10.0-1160.42.2.el7.x86_64-x86_64-with-glibc2.17 (linux_64)
+  Python version: 3.13.2
+  CPUs number: 64
+
+Started: 2025-09-30 10:55:11
+
+Logging to /tmp/slurm-579694/nxf.iNEf44tExg/quast/quast.log
+
+CWD: /tmp/slurm-579694/nxf.iNEf44tExg
+Main parameters: 
+  MODE: default, threads: 8, min contig length: 500, min alignment length: 65, min alignment IDY: 95.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Contigs:
+  Pre-processing...
+  assembly.polished.fasta ==> assembly.polished
+
+2025-09-30 10:55:17
+Running Basic statistics processor...
+  Contig files: 
+    assembly.polished
+  Calculating N50 and L50...
+    assembly.polished, N50 = 641782, L50 = 2, auN = 749451.4, Total length = 2599458, GC % = 59.56, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /tmp/slurm-579694/nxf.iNEf44tExg/quast/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /tmp/slurm-579694/nxf.iNEf44tExg/quast/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /tmp/slurm-579694/nxf.iNEf44tExg/quast/basic_stats/GC_content_plot.pdf
+  Drawing assembly.polished GC content plot...
+    saved to /tmp/slurm-579694/nxf.iNEf44tExg/quast/basic_stats/assembly.polished_GC_content_plot.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2025-09-30 10:55:19
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2025-09-30 10:55:20
+RESULTS:
+  Text versions of total report are saved to /tmp/slurm-579694/nxf.iNEf44tExg/quast/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /tmp/slurm-579694/nxf.iNEf44tExg/quast/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /tmp/slurm-579694/nxf.iNEf44tExg/quast/report.html
+  PDF version (tables and plots) is saved to /tmp/slurm-579694/nxf.iNEf44tExg/quast/report.pdf
+  Icarus (contig browser) is saved to /tmp/slurm-579694/nxf.iNEf44tExg/quast/icarus.html
+  Log is saved to /tmp/slurm-579694/nxf.iNEf44tExg/quast/quast.log
+
+Finished: 2025-09-30 10:55:20
+Elapsed time: 0:00:08.835027
+NOTICEs: 1; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

@@ -1,223 +1,218 @@
-Date: 12/15/2025
-@AUTHOR: José Cantú 
-
-# Goal in this Project
-Generation of a publication-grade genome assembly for Strain Pseudo and determine whether it represents a novel species/genus within Oscillospiraceae. 
-
-## Current Best Assembly 
-- Assembly used for taxonomy comparisons: `assembly.polished.fasta` 
-- Size: 2,617,187 bp 
-- GC: 59.52%
-- Proteins (TYGS): 2,593
-### From Quast using Flye since best overall stats from all assemblies tried:
-* contigs (>= 0 bp)         6             
-* contigs (>= 1000 bp)      6             
-* contigs (>= 5000 bp)      5             
-* contigs (>= 10000 bp)     4             
-* contigs (>= 25000 bp)     4             
-* contigs (>= 50000 bp)     4             
-* Total length (>= 0 bp)      2575873       
-* Total length (>= 1000 bp)   2575873       
-* Total length (>= 5000 bp)   2574659       
-* Total length (>= 10000 bp)  2564710       
-* Total length (>= 25000 bp)  2564710       
-* Total length (>= 50000 bp)  2564710       
-* contigs                   6             
-* Largest contig              1329041       
-* Total length                2575873       
-* GC (%)                      59.68         
-* N50                         1329041       
-* N90                         1018847       
-* auN                         1098850.5     
-* L50                         1             
-* L90                         2             
-* N's per 100 kbp           0.00
-
-## Genome Quality (CheckM) 
-- 98.66% Completeness 
-- 0.67% Contamination 
-
-## 16S rRNA 
-- Barrnap-extracted 16s rRNA genes: 2 copies, each 1,529 bp `16S.fna` 
-- To be used as support context only (not primary species/genus factor or delimiter) 
-
-## Novelty evidence Summary 
-**GTDB-TK** places strain Psuedo in family Oscillospiraceae, near place holder genus `g__Marseille-P3106`.
-
-**TYGS (GDBP -> dDDH)** all dDDH values to type strains are far below the ~70% species boundary. 
-- Best hit here Flintibacter porci P01025 dDDH(d4)=26.4%
-- Vermiculatibacterium agrestimuris DSM 112226T dDDH(d4)=20.8%
-See `Type_Strain_Genome_Server_dDDH_values_comparison_with_Psuedo_assemly_polish.*` 
-
-**EzAAI** strongest genus level similarity is to Vermiculatibacterium agrestimuris.
-- AAI or Average Amino Acid Identity = 74.109% 
-- Proteome Cov. = 0.5537 (POCP = 55.37%) 
-- To settle genus placement I plan to do the following: use the bac120 summary from gtdb-TK and build a phylogenomic tree with the curated sampling list provided from TYGS + boot strap support if low percentage that would settle novel genus. 
-
-## Genome Closure Status 
-Not fully closed due to long repeats (~70kb & 140kb) between major contigs. With ONT reads length N50 = 3.4 kb, repeat resolution is limited w/o substantiall longer ont reads spanning repeat regions. 
-
-## Assembly Closure Summary 
-
-### Why Closure is difficult for this prokaryotic genome 
-Bandage/graph inspection indicates two large contigs are separated by long repeat regions (~70 kb and ~140 kb). Resolution requires multiple long reads spanning each repeat plus unique flanks.
+# genome_IJSEM
 
-### ONT read QC (NanoPlot) 
-- Reads: 610,420
-- Total Bases: 1.432 Gb (~550x coverage vs ~2.6 Mb genome) 
-- Read length N50: 3,389 bp 
-- Longest read: 177,575 bp (next: 145,754 bp) 
-My interpretation: despite the high coverage, most reads are too short to robustly span the long repeats. I will try an insiloco filtering of the longest read and 2nd one to see if they are enough to close the genome assuming unique flanks are found to bridge the long repeat regions. 
+Genome-taxonomy and manuscript-support repository for **Strain Pseudo**, a candidate novel taxon within **Oscillospiraceae**.
 
-### Bridging Diagnositcs | ONT mapped to assembly 
-Shared read IDs between end-windows of the two largest contigs 
-- 20 kb windows 0 shared reads (all orientations) 
-- 50 - 100 kb window several shared reads depending on orientation 
-My interpreatation from getting these stats: weak/ambigious bridging signal here, likely dominated by repeat mapping rather than unique spanning evidence. 
+## Project goal
 
-### Assemblies attempted 
-- Unicycler hybrid and bold: bold mode improved contiguity but remained fragmented (16 contigs from hybrid normal and 12 from bold mode). 
-- Raven: The best assembly I got (5 contigs).
-- Flye: (Seq Coast Run rereplicated - 6 contigs). 
-- Autocycler: limited benefit because input assemblies need to be near complete ~2/3 contigs; input assemblies some were completely fragmented best one was 12 contigs. Repeat structure exceeded typical read span. 
+Generate a publication-grade genome assembly for Strain Pseudo and evaluate whether it represents a **novel species** and potentially a **novel genus** using genome-based taxonomy workflows aligned with IJSEM expectations.
 
-### Practical Next Steps for closure experiments (Low cost effort on my end) 
-1) In-silico filtering of ONT reads keeping only long ONT reads at moderate coverage + reassembly with Raven/Flye and recheck graph - if closed then check if assembly is accurate 
-2) Evaluate whether the longest read you have can bridge the repeats uniquely (Will need to check unique anchors) 
-3) If closure is truly impossible ~ likely given the dataset thus far then a solid option would be to proceed with the high quality draft of 5/6 contigs since they meet the criteria that the Journal species - so then comes a question is briding truly necessary if the requirements are already met for the Journal? A high quaity draft is better than using the last resort of trying to bridge the repeat regions with a separate organism since that bias all the reads already given and risks it being a chimeric genome. 
+## Current status
 
-### Decision NOte 
-Closing the genome is not stricly required given the genome already meets the criteria specified thus far. I will include the rest of the values and figures IJSEM specifies. In IJSEM own words: "While the ideal is to have a closed genome, in most circumstances this is not
-possible or cost-efficient, resulting in contigs of various lengths. Very short contigs are usually excluded from the final assemblies.
-However, as there is not a clear standard on how to select contigs, the absolute number of contigs is not a really good quality
-indicator. Indices like the N50 (length of the shortest contig that accumulatively show 50% or more of the genome size) or L50
-(smallest number of contigs that sums half of genome size) give better assessment of the genome quality."  
+## Evidence hierarchy
 
-## Taxonomy & Novelty Evidence (Based on IJSEM Criteria) 
+Species-level novelty is evaluated primarily with TYGS/dDDH comparisons to type-strain genomes. TYGS classified the query genome as a potential new species, and all dDDH values were far below the 70% species boundary.
 
-### Taxon Content 
-Strain Psuedo is placed within 
-- o__Oscillospirales; f__Oscillospiraceae 
-- GTDB-Tk places it near placeholder genus `g__Marseille-P3106`.
+Genus-level placement is evaluated using EzAAI plus a curated bac120/IQ-TREE phylogeny. The final genus-claim tree will use a reduced type-strain/type-species anchor set to compare Pseudo against the nomenclatural anchors of neighboring validly published genera, while retaining "Vermiculatibacterium agrestimuris" as biologically important provisional lineage context.
 
-### Species-level delimitation (primary evidence)
-TYGS GBDP/dDDH comparisons to type strains show all values far below the ~70% species boundary:
-- Best dDDH(d4): 26.4% vs Flintibacter porci P01025
-- dDDH(d4): 20.8% vs Vermiculatibacterium agrestimuris DSM 112226T
-Conclusion: no species-level match to included type strains -> candidate novel species.
+The broader TYGS-neighbor bac120 tree is retained as nearest-neighbor context, not as the primary formal genus-claim tree.
 
+### Best assembly currently used for taxonomy comparisons
 
-### Genus-level similarity (supporting OGRI)
-EzAAI comparisons against reference/type genomes:
-- Best AAI: 74.109% to Vermiculatibacterium agrestimuris DSM 112226T
-- “Proteome cov.” 0.5537 corresponds approximately to POCP 55.37%
-Interpretation: strongest proteome-level affinity is toward Vermiculatibacterium.
+The current assembly used for downstream taxonomy comparisons is `assembly.polished.fasta`.
 
-### Trees included (how to interpret)
-- TYGS genome GBDP phylogram (`genome_GBDP_phylogram.svg`): whole-genome distance tree; bootstrap-supported; strongest phylogenetic evidence among current trees.
-- TYGS 16S GBDP phylogram (`16S_GDBP_phylogram.svg`): supportive only; 16S can lack genus-level resolution and branch lengths can be biased if sequences are incomplete (not the case here; 16S ~1529 bp).
-- EzAAI dendrogram (`aai.nwk`): hierarchical clustering on AAI-derived distances; no bootstrap support; use as similarity visualization, not as a formal phylogenomic tree.
-- Will include a genus phylogram here.... 
+**Selected taxonomy assembly**
+- Selected as the current best assembly for taxonomy comparisons
+- Size: **2,617,187 bp**
+- GC: **59.52%**
+- TYGS proteins: **2,593**
 
-### Analysis to settle if novel genus? 
-Build a marker gene phylogenomic tree using the curated list from TYGS 
-- Use GTDB-TK bac120 marker gene alignment and have gtbd-TK build the marker gene tree 
-- Pass that marker gene tree over to IQ-TREE 2/3 and report the support bootstrap values to see evolutionary distances to settle if novel or not. 
-This will then serve as the primary genus placement anchor, with dDDH values already in place for the TYGS tree tree and AAI/POCP as supporting OGRI.
+**QC summary for the selected assembly**
+- Contigs: **6**
+- Largest contig: **1,329,041 bp**
+- N50: **1,329,041**
+- N90: **1,018,847**
+- auN: **1,098,850.5**
+- L50: **1**
+- L90: **2**
+- Ns per 100 kbp: **0.00**
+- CheckM completeness: **98.66%**
+- CheckM contamination: **0.67%**
 
-### Guide lines for support of a novel genus when looking at the created phylogenetic tree 
-When claiming a novel genus, the phylogenomic tree should include type strains and use single copy genes. The isolate must form a distinct branch, with strong support (e.g., bootstrap ≥90). If the genus is not novel, the isolate should nest within an existing genus, supported by high bootstrap values.
+**Important assembly provenance note**
+This repository uses the `2025-09-22` workflow as the **assembly/QC/taxonomy workflow backbone**, but the final assembly selected for taxonomy comparisons is documented as the **Flye-derived** `assembly.polished.fasta` based on overall downstream use and QC. Raven produced a strong alternative assembly with fewer contigs in exploratory comparison, but the current downstream taxonomic summaries are anchored to the Flye-selected draft.
 
-# In‑silico length filtering + reassembly
+## Taxonomic interpretation summary
 
-Goal: see if dataset already contains enough very long reads to bridge the ~70 kb and ~140 kb repeats.
+### Placement
+- GTDB-Tk places Strain Pseudo in **Oscillospiraceae**
+- GTDB-Tk places it near placeholder genus **`g__Marseille-P3106`**
 
-Make read subsets like: >30 kb, >50 kb, >80 kb, >120 kb and cap depth (e.g., keep ~60–100×)
+### Species-level evidence
+TYGS GBDP/dDDH comparisons to type strains are all far below the usual species boundary (~70%), supporting **candidate novel species** status.
 
-Reassemble with Raven and Flye on the filtered sets
+Examples:
+- **26.4% dDDH(d4)** vs *Flintibacter porci* P01025
+- **20.8% dDDH(d4)** vs *Vermiculatibacterium agrestimuris* DSM 112226T
 
-Check graph in Bandage + see if contigs collapse
+### Genus-level supporting evidence
+EzAAI currently shows the strongest proteome-level similarity to *Vermiculatibacterium agrestimuris*:
+- **AAI = 74.109%**
+- **Proteome coverage = 0.5537**
+- Approximate POCP context: **55.37%**
 
-# “Do we actually have bridging reads?” test with adjustments in mind 
+### 16S context
+Barrnap-extracted 16S support files are included for context only:
+- **2 copies**
+- **1,529 bp each**
+- supportive, but not treated as the primary delimiter for species/genus claims
 
-My bridging-summary output already hints at this kind of analysis, but to make it repeat relevant.
+## ANI provenance
 
-Only consider long reads (e.g., ≥120 kb for the 140 kb repeat; ≥80 kb for the 70 kb repeat)
+An initial FastANI screen against GTDB-derived neighbor genomes recovered the same Marseille-P3106 neighborhood indicated by GTDB-Tk, with a top ANI of approximately **97.44** in that exploratory neighbor panel.
 
-Require each candidate bridging read to have unique anchors on both sides (high MAPQ, or unique k-mers), otherwise repeats will create false “bridges” which will reduce overall accuracy of accembly and QV score from Yak. 
+However, this ANI result is retained as **supporting neighborhood evidence**, not as the primary taxonomic anchor, for two reasons:
 
-If I can't find even one read that anchors uniquely on both sides of the repeat, closure is impossible with current data, regardless of assembler.
+1. the older ANI workflow produced a raw `fastani.tsv` against a GTDB-derived neighbor set rather than a finalized curated nomenclatural panel;
+2. a later stricter ANI workflow that attempted to enforce type-material neighbors failed during panel construction and is retained in the repository for provenance only.
 
-# Other options for bridging the genome?
-I've listed long ont as an option given the recommendations from Ryan its the standard option for long repeat regions since it costs to much this is a no go. 
-Cas9 bridging being to technical in designing gRNAs guides that would act as unique anchors so sequencing enriches and span the repeat regions to bridge on both sides { A lot can go wrong here } 
-reference guided briding using a close reference based closed genome - however as I mentioned this will bias the results if the selling point here of the paper is something novel ~ risks include chimerism of the genome and bias and changed all the stats thus far; hide what was novel about it to begin with {e.g. such as the repeat arrangment}; it can inflant the dDDH + AAI/POCP scoring towards the reference genome being used. 
+In addition, manual inspection of the downloaded metadata for the top Marseille-P3106 RefSeq neighbor indicated that the record was flagged as **contaminated/suppressed**, which is important context for why the exploratory ANI screen is not centered in the final taxonomic argument.
 
-# Why does IJSEM using Type Strains as a reference point when settling for novelty for genus/species?
+As a result, final taxonomic interpretation in this repository is based primarily on:
+- **TYGS/dDDH**
+- **EzAAI**
+- **phylogenomic reconstruction**
 
-IJSEM is a journal that records and validates prokaryotic names under the rules of nomenclature provided by the international code of nomeclature of prokaryotes ICNP, recommending authors to follow this format when naming, and the name of a spcies is anchored to its nomenclatural type for bacteria, that is usually a living strain which is the type strain that is perserved and accessible to the community to use. That's why comparisons to type strains or the type species' type strains when making genus level decisions if its novel or not is the community standard for "what this name actually refers to." Having a novel species/genus claim that are framed as "compared to the closest type strain" because that is metric used that fixes the name in a reproducible way. 
+rather than the initial Marseille-based ANI screen alone.
 
+## Genome closure status
 
+## Genome closure status
 
+The genome is **not fully closed**, but the current assembly is still a **high-quality draft suitable for taxonomy-focused analysis**.
 
+Current evidence indicates that closure is being limited by **long repeat structure** rather than by poor overall genome quality. Based on graph inspection and downstream review, two major contigs appear to be separated by repeat regions of approximately **~70 kb** and **~140 kb**. Resolving those repeats would require multiple long ONT reads that span the repeat plus unique flanking sequence on both sides.
 
+### Why closure is difficult in this dataset
 
+Although the ONT dataset has high total depth, the read-length distribution is not ideal for confidently bridging these repeat regions:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Reads: **610,420**
+- Total ONT bases: **1.432 Gb** (~550× coverage relative to a ~2.6 Mb genome)
+- Read length N50: **3,389 bp**
+- Longest read: **177,575 bp**
+- Second longest read: **145,754 bp**
+
+In practice, this means overall depth is high, but **most reads are much shorter than the repeat regions that need to be resolved**. As a result, repeat-spanning evidence is weak and can be confounded by ambiguous repeat mapping.
+
+Bridging diagnostics were also not strongly supportive of confident closure:
+- **20 kb end-window comparison:** **0 shared reads** across orientations
+- **50–100 kb windows:** some shared reads were observed, but the signal was interpreted as **weak/ambiguous** and likely influenced by repeat-associated mappings rather than unique bridging evidence
+
+### Assembly context
+
+Multiple assembly strategies were explored:
+
+- **Unicycler hybrid**: fragmented (**16 contigs**)
+- **Unicycler bold**: improved but still fragmented (**12 contigs**)
+- **Raven**: strongest contiguity in exploratory comparison (**5 contigs**)
+- **Flye**: selected as the current best assembly for taxonomy comparisons (**6 contigs**)
+- **Autocycler/Trycycler-style workflow**: limited benefit in this dataset because the input assemblies were not close enough to complete and the repeat structure still exceeded typical read span
+
+### Why a high-quality draft is acceptable here
+
+The selected assembly used for taxonomy comparisons remains strong by the metrics most relevant to IJSEM-style genome quality assessment:
+
+- Assembly size: **2,617,187 bp**
+- GC: **59.52%**
+- Contigs: **6**
+- Largest contig: **1,329,041 bp**
+- N50: **1,329,041**
+- L50: **1**
+- CheckM completeness: **98.66%**
+- CheckM contamination: **0.67%**
+- Barrnap-extracted 16S copies: **2**, each **1,529 bp**
+
+So while the genome is not closed, the current evidence suggests that this is a case of the read length being too short in compareison to the repeat regions rather than an assembly that is unusable for taxonomic inference. For that reason:
+
+- a **high-quality draft** is already sufficient for the current taxonomy work
+- closure-support experiments are preserved in this repository as **support history**
+
+## Repository layout
+
+```text
+.
+|-- README.MD
+|-- assembly_qc
+|   |-- README_2025-09-22.md
+|   |-- results
+|   |   `-- 2025-09-22
+|   |-- support_history
+|   |   `-- 2025-12-15-insilico
+|   `-- workflow_backbone
+|-- docs
+|   `-- PROVENANCE.md
+|-- genus_identity
+|   |-- aai
+|   |   |-- results
+|   |   `-- workflow
+|   `-- phylogeny
+|       |-- results
+|       `-- workflow
+`-- species_identity
+    `-- ani
+        |-- README.md
+        |-- archive
+        |   |-- current_failed_type_enforced
+        |   `-- old_success
+        `-- results
+            `-- 2025-09-30
+```
+
+## Module guide
+
+### `assembly_qc/`
+Main assembly/QC workflow backbone and the selected summary artifacts used for manuscript-relevant assembly evaluation.
+- `workflow_backbone/` = main workflow scripts from the IJSEM-oriented assembly/QC backbone
+- `results/2025-09-22/` = selected summary artifacts (QUAST, CheckM, BUSCO, Yak, 16S)
+- `support_history/2025-12-15-insilico/` = closure-support experiments and exploratory repeat-resolution work
+
+### `species_identity/ani/`
+ANI provenance and workflow history.
+- `archive/old_success/` = older ANI workflow that produced the raw `fastani.tsv`
+- `archive/current_failed_type_enforced/` = stricter later ANI prototype that failed during type-material panel construction
+- `results/2025-09-30/` = raw ANI result, refs list, and metadata panel
+
+### `genus_identity/aai/`
+EzAAI workflow and outputs.
+- `workflow/` = AAI pipeline files
+- `results/` = `Pseudo_vs_refs.aai.tsv`, `aai.tsv`, `aai.nwk`
+
+### `genus_identity/phylogeny/`
+Genus-placement phylogeny workflow and outputs.
+- `workflow/` = bac120 / IQ-TREE genus phylogeny workflow files
+- `results/` = current FastTree / IQ-TREE tree artifacts
+
+### `docs/`
+Repository-level provenance notes.
+
+## What is finalized vs still being curated
+
+### Finalized enough for repo provenance
+- workflow backbone organization
+- selected taxonomy assembly summary
+- TYGS/dDDH evidence
+- EzAAI module
+- ANI provenance split into old-success vs current-failed
+- genus phylogeny workflow/results staging
+
+### Still under active scientific curation
+- strict type-strain/type-species bac120/IQ-TREE genus tree
+- final iTOL SVG export for the strict tree
+- final reference curation notes
+- final methods/results wording
+- software versions file
+
+## Provenance principle
+
+This repository is organized around the **functional modules that produced the manuscript-relevant results**, not as a direct mirror of all original dated run directories. Original run provenance is preserved in `docs/PROVENANCE.md` and in archived workflow subdirectories where needed.
 
