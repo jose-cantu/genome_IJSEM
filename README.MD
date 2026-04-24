@@ -8,6 +8,14 @@ Generate a publication-grade genome assembly for Strain Pseudo and evaluate whet
 
 ## Current status
 
+## Evidence hierarchy
+
+Species-level novelty is evaluated primarily with TYGS/dDDH comparisons to type-strain genomes. TYGS classified the query genome as a potential new species, and all dDDH values were far below the 70% species boundary.
+
+Genus-level placement is evaluated using EzAAI plus a curated bac120/IQ-TREE phylogeny. The final genus-claim tree will use a reduced type-strain/type-species anchor set to compare Pseudo against the nomenclatural anchors of neighboring validly published genera, while retaining "Vermiculatibacterium agrestimuris" as biologically important provisional lineage context.
+
+The broader TYGS-neighbor bac120 tree is retained as nearest-neighbor context, not as the primary formal genus-claim tree.
+
 ### Best assembly currently used for taxonomy comparisons
 
 The current assembly used for downstream taxonomy comparisons is `assembly.polished.fasta`.
@@ -198,10 +206,11 @@ Repository-level provenance notes.
 - genus phylogeny workflow/results staging
 
 ### Still under active scientific curation
-- final curated **genus tree sampling set**
-- final **outgroup choice / rooting presentation**
-- final manuscript wording for genus placement
-- final decision on whether Raven/Flye comparison needs a dedicated summary table in the paper
+- strict type-strain/type-species bac120/IQ-TREE genus tree
+- final iTOL SVG export for the strict tree
+- final reference curation notes
+- final methods/results wording
+- software versions file
 
 ## Provenance principle
 
