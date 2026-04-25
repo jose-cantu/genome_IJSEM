@@ -1,0 +1,120 @@
+
+## Run metadata
+Generated: 2026-04-24T15:42:27-05:00
+Host: SilverMagnus
+User: jason
+Working directory: /home/jason/genome_IJSEM
+Git commit: 89532de73aa36b22e67241109627adebe211a463
+Git branch: repo-cleanup-ijsem
+
+## Workflow engine
+
+### Nextflow
+Command: nextflow -version
+./collect_versions.sh: line 17: nextflow: command not found
+
+## Assembly and QC tools
+
+### Porechop_ABI
+Conda env: /mount/britton/Jose/conda-envs/porechop_abi
+Command: conda run -p /mount/britton/Jose/conda-envs/porechop_abi porechop_abi --version
+
+EnvironmentLocationNotFound: Not a conda environment: /mount/britton/Jose/conda-envs/porechop_abi
+
+
+### Flye
+Conda env: /mount/britton/Jose/conda-envs/mamba/envs/autocycler_env
+Command: conda run -p /mount/britton/Jose/conda-envs/mamba/envs/autocycler_env flye --version
+
+EnvironmentLocationNotFound: Not a conda environment: /mount/britton/Jose/conda-envs/mamba/envs/autocycler_env
+
+
+### QUAST
+Conda env: /mount/britton/Jose/conda-envs/quast
+Command: conda run -p /mount/britton/Jose/conda-envs/quast quast.py --version
+
+EnvironmentLocationNotFound: Not a conda environment: /mount/britton/Jose/conda-envs/quast
+
+
+### CheckM
+Conda env: /mount/britton/Jose/conda-envs/checkm
+Command: conda run -p /mount/britton/Jose/conda-envs/checkm checkm -h
+
+EnvironmentLocationNotFound: Not a conda environment: /mount/britton/Jose/conda-envs/checkm
+
+
+### BUSCO
+Conda env: /mount/britton/Jose/conda-envs/busco
+Command: conda run -p /mount/britton/Jose/conda-envs/busco busco --version
+
+EnvironmentLocationNotFound: Not a conda environment: /mount/britton/Jose/conda-envs/busco
+
+
+### Yak
+Conda env: /mount/britton/Jose/conda-envs/yak
+Command: conda run -p /mount/britton/Jose/conda-envs/yak yak
+
+EnvironmentLocationNotFound: Not a conda environment: /mount/britton/Jose/conda-envs/yak
+
+
+### Barrnap
+Conda env: /mount/britton/Jose/conda-envs/mamba/envs/barrnap_env
+Command: conda run -p /mount/britton/Jose/conda-envs/mamba/envs/barrnap_env barrnap --version
+
+EnvironmentLocationNotFound: Not a conda environment: /mount/britton/Jose/conda-envs/mamba/envs/barrnap_env
+
+
+## Taxonomy and phylogeny tools
+
+### NCBI datasets
+Conda env: /mount/britton/Jose/conda-envs/ncbi_datasets
+Command: conda run -p /mount/britton/Jose/conda-envs/ncbi_datasets datasets --version
+
+EnvironmentLocationNotFound: Not a conda environment: /mount/britton/Jose/conda-envs/ncbi_datasets
+
+
+### GTDB-Tk
+Conda env: /mount/britton/Jose/conda-envs/gtdbtk
+Command: conda run -p /mount/britton/Jose/conda-envs/gtdbtk gtdbtk --version
+
+EnvironmentLocationNotFound: Not a conda environment: /mount/britton/Jose/conda-envs/gtdbtk
+
+
+### IQ-TREE 2
+Conda env: /mount/britton/Jose/conda-envs/iqtree
+Command: conda run -p /mount/britton/Jose/conda-envs/iqtree iqtree2 --version
+
+EnvironmentLocationNotFound: Not a conda environment: /mount/britton/Jose/conda-envs/iqtree
+
+
+## AAI tools
+
+### EzAAI env check
+Conda env: /mount/britton/Jose/conda-envs/mamba/envs/ezaai
+Command: conda run -p /mount/britton/Jose/conda-envs/mamba/envs/ezaai bash -lc which ezaai || which EzAAI || find "$CONDA_PREFIX" -maxdepth 3 -iname "*ezaai*" -o -iname "*.jar" | head -20
+
+EnvironmentLocationNotFound: Not a conda environment: /mount/britton/Jose/conda-envs/mamba/envs/ezaai
+
+
+## Web services / visualization
+
+### TYGS
+Service: Type (Strain) Genome Server
+Result date from report: 2025-09-30
+Job ID: 1437b825-85b8-4ebb-868c-ab4437c4d4f3
+
+### iTOL
+Service: Interactive Tree Of Life
+Used for final tree visualization and manual label editing
+
+## Workflow files inspected
+./assembly_qc/workflow_backbone/hybrid_closed_assembly.conf
+./assembly_qc/workflow_backbone/hybrid_closed_assembly.nf
+./assembly_qc/workflow_backbone/hybrid_closed_assembly.sh
+./collect_versions.sh
+./genus_identity/aai/workflow/aii_run_.conf
+./genus_identity/aai/workflow/aii_run_.nf
+./genus_identity/aai/workflow/aii_run_.sh
+./genus_identity/phylogeny/workflow/phylogenetic_tree_genus.conf
+./genus_identity/phylogeny/workflow/phylogenetic_tree_genus.nf
+./genus_identity/phylogeny/workflow/phylogenetic_tree_genus.sh

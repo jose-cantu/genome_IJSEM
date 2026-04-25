@@ -11,7 +11,7 @@
 
 
 # Define directories
-Work_DIR="/mount/britton/Jose/Jobs/Jason/2025-12-15-Phylogram-Tree-Genus-Nextflow-Run/workflow-output/work"  
+Work_DIR="/mount/britton/Jose/Jobs/Jason/2026-04-22-Stage-2-Finalized-Phylogram-Tree-Genus-Nextflow-Run/workflow-output/work"  
 
 eval "$(conda shell.bash hook)"
 
