@@ -30,6 +30,25 @@ workflow {
   accession_ch = Channel.value(accFile)
   refs_ch = DOWNLOAD_REFS(accession_ch) 
 
+  // QC targets: Pseudo assembly + all downloaded reference genomes
+  isolate_qc_ch = asm_ch.map { sample, asm_fa ->
+      tuple("ISO_${sample}" as String, asm_fa)
+  }
+
+  ref_qc_ch = refs_ch.flatMap { refs_dir ->
+      refs_dir.toFile().listFiles()
+          .findAll { it.name.endsWith('.fna') }
+          .collect { f ->
+              def id = f.name.replaceFirst(/\.fna$/, '')
+              tuple(id as String, file(f.toString()))
+          }
+  }
+
+  qc_targets_ch = isolate_qc_ch.mix(ref_qc_ch)
+
+  quast_qc   = QUAST_QC(qc_targets_ch)
+  checkm1_qc = CHECKM1_QC(qc_targets_ch)
+
   panel_ch = asm_ch.combine(refs_ch)  
 
   denovo_ch = GTDB_DENOVO_ALIGN(panel_ch) 
@@ -81,7 +100,45 @@ process FLYE {
   flye --nano-raw "${ont_trim}" --out-dir flye --genome-size 2.6m --asm-coverage 100 --threads ${task.cpus}
   cp -f flye/assembly.fasta assembly.fasta 
   """ 
-} 
+}
+
+process QUAST_QC {
+  tag { id }
+  publishDir { "${params.outdir}/qc/quast/${id}" }, mode: 'copy'
+  conda "/mount/britton/Jose/conda-envs/quast"
+
+  input:
+  tuple val(id), path(fa)
+
+  output:
+  tuple val(id), path("quast")
+
+  script:
+  """
+  quast.py "${fa}" -o quast -t ${task.cpus}
+  """
+}
+
+process CHECKM1_QC {
+  tag { id }
+  publishDir { "${params.outdir}/qc/checkm1/${id}" }, mode: 'copy'
+  conda "/mount/britton/Jose/conda-envs/checkm"
+
+  input:
+  tuple val(id), path(fa)
+
+  output:
+  tuple val(id), path("checkm1"), path("checkm.qa.tsv")
+
+  script:
+  """
+  mkdir -p bins
+  cp -f "${fa}" "bins/${id}.fna"
+
+  checkm lineage_wf -x fna -t ${task.cpus} bins checkm1
+  checkm qa -o 2 checkm1/lineage.ms checkm1 > checkm.qa.tsv
+  """
+}
 
 process DOWNLOAD_REFS {
   tag "refs" 
