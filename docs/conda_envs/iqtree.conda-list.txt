@@ -1,0 +1,9 @@
+# packages in environment at /mount/britton/Jose/conda-envs/iqtree:
+#
+# Name                     Version          Build            Channel
+_libgcc_mutex              0.1              conda_forge      conda-forge
+_openmp_mutex              4.5              2_gnu            conda-forge
+iqtree                     2.3.6            h503566f_1       bioconda
+libgcc                     14.2.0           h77fa898_1       conda-forge
+libgomp                    14.2.0           h77fa898_1       conda-forge
+libstdcxx                  14.2.0           hc0a3c3a_1       conda-forge

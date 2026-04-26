@@ -1,102 +1,417 @@
 
 ## Run metadata
-Generated: 2026-04-24T15:42:27-05:00
-Host: SilverMagnus
-User: jason
-Working directory: /home/jason/genome_IJSEM
-Git commit: 89532de73aa36b22e67241109627adebe211a463
-Git branch: repo-cleanup-ijsem
+Generated: 2026-04-26T16:18:15-0500
+Host: compute-9-1.mab
+User: u233451
+Working directory: /mount/britton/Jose/Jobs/Jason/genome_IJSEM
+Git commit: 8dfcf5fc028e8c2e650ef0eb6a33b61fd1f57b58
+Git branch: master
+Scanned roots:
+  .
+  ../2025-09-22-novel-isolate-closed-genome-trycycler-IJSEM-Criteria-Updates-nextflow-run
+  ../2025-09-30-obtain-ANI-results-type-strain-nextflow-run
+  ../2025-10-04-Obtaining-AAI-Results-and-Tree-Nextflow-run
+  ../2026-04-24-Finalized-Phylogram-Type-Species-Only-Tree-Genus-Nextflow-Run
 
-## Workflow engine
+## Nextflow versions from workflow logs
+Nextflow was not executed directly here because the local Nextflow Java runtime is not clean on this node.
+Versions below are parsed from nextflow.log files generated during actual workflow runs.
 
-### Nextflow
-Command: nextflow -version
-./collect_versions.sh: line 17: nextflow: command not found
 
-## Assembly and QC tools
+### ../2025-09-22-novel-isolate-closed-genome-trycycler-IJSEM-Criteria-Updates-nextflow-run/workflow/logs/nextflow.log
+Sep-30 10:43:55.129 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.0
+
+### ../2025-09-22-novel-isolate-closed-genome-trycycler-IJSEM-Criteria-Updates-nextflow-run/workflow/logs/nextflow.log.1
+Sep-29 14:23:12.760 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.0
+
+### ../2025-09-22-novel-isolate-closed-genome-trycycler-IJSEM-Criteria-Updates-nextflow-run/workflow/logs/nextflow.log.2
+Sep-29 11:53:13.609 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.0
+
+### ../2025-09-22-novel-isolate-closed-genome-trycycler-IJSEM-Criteria-Updates-nextflow-run/workflow/logs/nextflow.log.3
+Sep-29 08:41:03.220 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.0
+
+### ../2025-09-22-novel-isolate-closed-genome-trycycler-IJSEM-Criteria-Updates-nextflow-run/workflow/logs/nextflow.log.4
+Sep-29 07:49:05.570 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.0
+
+### ../2025-09-22-novel-isolate-closed-genome-trycycler-IJSEM-Criteria-Updates-nextflow-run/workflow/logs/nextflow.log.5
+Sep-29 07:44:57.765 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.0
+
+### ../2025-09-22-novel-isolate-closed-genome-trycycler-IJSEM-Criteria-Updates-nextflow-run/workflow/logs/nextflow.log.6
+Sep-29 05:48:11.548 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.0
+
+### ../2025-09-22-novel-isolate-closed-genome-trycycler-IJSEM-Criteria-Updates-nextflow-run/workflow/logs/nextflow.log.7
+Sep-28 22:15:41.975 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.0
+
+### ../2025-09-22-novel-isolate-closed-genome-trycycler-IJSEM-Criteria-Updates-nextflow-run/workflow/logs/nextflow.log.8
+Sep-28 21:52:54.566 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.0
+
+### ../2025-09-22-novel-isolate-closed-genome-trycycler-IJSEM-Criteria-Updates-nextflow-run/workflow/logs/nextflow.log.9
+Sep-28 19:08:19.487 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.0
+
+### ../2025-09-30-obtain-ANI-results-type-strain-nextflow-run/workflow/logs/nextflow.log
+Oct-15 18:53:34.626 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+
+### ../2025-09-30-obtain-ANI-results-type-strain-nextflow-run/workflow/logs/nextflow.log.1
+Oct-15 16:19:47.586 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+
+### ../2025-09-30-obtain-ANI-results-type-strain-nextflow-run/workflow/logs/nextflow.log.2
+Oct-15 16:09:07.112 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+
+### ../2025-09-30-obtain-ANI-results-type-strain-nextflow-run/workflow/logs/nextflow.log.3
+Oct-15 16:05:35.366 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+
+### ../2025-09-30-obtain-ANI-results-type-strain-nextflow-run/workflow/logs/nextflow.log.4
+Oct-15 15:57:24.136 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+
+### ../2025-09-30-obtain-ANI-results-type-strain-nextflow-run/workflow/logs/nextflow.log.5
+Oct-15 15:53:42.623 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+
+### ../2025-09-30-obtain-ANI-results-type-strain-nextflow-run/workflow/logs/nextflow.log.6
+Oct-15 15:49:38.751 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+
+### ../2025-09-30-obtain-ANI-results-type-strain-nextflow-run/workflow/logs/nextflow.log.7
+Oct-15 15:39:42.953 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+
+### ../2025-09-30-obtain-ANI-results-type-strain-nextflow-run/workflow/logs/nextflow.log.8
+Oct-15 15:32:29.371 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+
+### ../2025-09-30-obtain-ANI-results-type-strain-nextflow-run/workflow/logs/nextflow.log.9
+Oct-15 14:46:36.243 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+
+### ../2025-10-04-Obtaining-AAI-Results-and-Tree-Nextflow-run/workflow/logs/nextflow.log
+Oct-16 20:44:18.332 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.0
+
+### ../2025-10-04-Obtaining-AAI-Results-and-Tree-Nextflow-run/workflow/logs/nextflow.log.1
+Oct-16 20:36:46.739 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.0
+
+### ../2025-10-04-Obtaining-AAI-Results-and-Tree-Nextflow-run/workflow/logs/nextflow.log.2
+Oct-16 20:33:26.058 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.0
+
+### ../2025-10-04-Obtaining-AAI-Results-and-Tree-Nextflow-run/workflow/logs/nextflow.log.3
+Oct-16 20:15:46.238 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.0
+
+### ../2025-10-04-Obtaining-AAI-Results-and-Tree-Nextflow-run/workflow/logs/nextflow.log.4
+Oct-16 20:14:45.537 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.0
+
+### ../2025-10-04-Obtaining-AAI-Results-and-Tree-Nextflow-run/workflow/logs/nextflow.log.5
+Oct-16 19:49:33.722 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.0
+
+### ../2025-10-04-Obtaining-AAI-Results-and-Tree-Nextflow-run/workflow/logs/nextflow.log.6
+Oct-16 19:08:24.830 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.0
+
+### ../2025-10-04-Obtaining-AAI-Results-and-Tree-Nextflow-run/workflow/logs/nextflow.log.7
+Oct-16 19:01:57.141 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.0
+
+### ../2026-04-24-Finalized-Phylogram-Type-Species-Only-Tree-Genus-Nextflow-Run/workflow/logs/nextflow.log
+Apr-24 14:35:33.514 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.0
+
+### ./species_identity/ani/archive/current_failed_type_enforced/nextflow.log
+Oct-15 18:53:34.626 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+
+## Conda environments declared in workflow files
+
+### fastani
+Path: /home/britton/Jose/conda-envs/fastani
+MISSING_ENV
+
+### NanoPlot
+Path: /mount/britton/Jose/conda-envs/NanoPlot
+conda list: docs/conda_envs/NanoPlot.conda-list.txt
+environment export: docs/conda_envs/NanoPlot.environment.yml
+
+### bakta_env
+Path: /mount/britton/Jose/conda-envs/bakta_env
+conda list: docs/conda_envs/bakta_env.conda-list.txt
+environment export: docs/conda_envs/bakta_env.environment.yml
+
+### bandage
+Path: /mount/britton/Jose/conda-envs/bandage
+conda list: docs/conda_envs/bandage.conda-list.txt
+environment export: docs/conda_envs/bandage.environment.yml
+
+### busco
+Path: /mount/britton/Jose/conda-envs/busco
+conda list: docs/conda_envs/busco.conda-list.txt
+environment export: docs/conda_envs/busco.environment.yml
+
+### checkm
+Path: /mount/britton/Jose/conda-envs/checkm
+conda list: docs/conda_envs/checkm.conda-list.txt
+environment export: docs/conda_envs/checkm.environment.yml
+
+### checkm2
+Path: /mount/britton/Jose/conda-envs/checkm2
+conda list: docs/conda_envs/checkm2.conda-list.txt
+environment export: docs/conda_envs/checkm2.environment.yml
+
+### fastani
+Path: /mount/britton/Jose/conda-envs/fastani
+conda list: docs/conda_envs/fastani.conda-list.txt
+environment export: docs/conda_envs/fastani.environment.yml
+
+### fastp
+Path: /mount/britton/Jose/conda-envs/fastp
+conda list: docs/conda_envs/fastp.conda-list.txt
+environment export: docs/conda_envs/fastp.environment.yml
+
+### gtdbtk
+Path: /mount/britton/Jose/conda-envs/gtdbtk
+conda list: docs/conda_envs/gtdbtk.conda-list.txt
+environment export: docs/conda_envs/gtdbtk.environment.yml
+
+### iqtree
+Path: /mount/britton/Jose/conda-envs/iqtree
+conda list: docs/conda_envs/iqtree.conda-list.txt
+environment export: docs/conda_envs/iqtree.environment.yml
+
+### autocycler_env
+Path: /mount/britton/Jose/conda-envs/mamba/envs/autocycler_env
+conda list: docs/conda_envs/autocycler_env.conda-list.txt
+environment export: docs/conda_envs/autocycler_env.environment.yml
+
+### barrnap_env
+Path: /mount/britton/Jose/conda-envs/mamba/envs/barrnap_env
+conda list: docs/conda_envs/barrnap_env.conda-list.txt
+environment export: docs/conda_envs/barrnap_env.environment.yml
+
+### dnaapler_env
+Path: /mount/britton/Jose/conda-envs/mamba/envs/dnaapler_env
+conda list: docs/conda_envs/dnaapler_env.conda-list.txt
+environment export: docs/conda_envs/dnaapler_env.environment.yml
+
+### ezaai
+Path: /mount/britton/Jose/conda-envs/mamba/envs/ezaai
+conda list: docs/conda_envs/ezaai.conda-list.txt
+environment export: docs/conda_envs/ezaai.environment.yml
+
+### medaka
+Path: /mount/britton/Jose/conda-envs/medaka
+conda list: docs/conda_envs/medaka.conda-list.txt
+environment export: docs/conda_envs/medaka.environment.yml
+
+### multiqc
+Path: /mount/britton/Jose/conda-envs/multiqc
+conda list: docs/conda_envs/multiqc.conda-list.txt
+environment export: docs/conda_envs/multiqc.environment.yml
+
+### ncbi_datasets
+Path: /mount/britton/Jose/conda-envs/ncbi_datasets
+conda list: docs/conda_envs/ncbi_datasets.conda-list.txt
+environment export: docs/conda_envs/ncbi_datasets.environment.yml
+
+### nextflow
+Path: /mount/britton/Jose/conda-envs/nextflow
+conda list: docs/conda_envs/nextflow.conda-list.txt
+environment export: docs/conda_envs/nextflow.environment.yml
+
+### polypolish_polyca_bwa_bwa_mem2_samtools
+Path: /mount/britton/Jose/conda-envs/polypolish_polyca_bwa_bwa_mem2_samtools
+conda list: docs/conda_envs/polypolish_polyca_bwa_bwa_mem2_samtools.conda-list.txt
+environment export: docs/conda_envs/polypolish_polyca_bwa_bwa_mem2_samtools.environment.yml
+
+### polypolish_pypolca_bwa-mem2_samtools
+Path: /mount/britton/Jose/conda-envs/polypolish_pypolca_bwa-mem2_samtools
+MISSING_ENV
+
+### porechop_abi
+Path: /mount/britton/Jose/conda-envs/porechop_abi
+conda list: docs/conda_envs/porechop_abi.conda-list.txt
+environment export: docs/conda_envs/porechop_abi.environment.yml
+
+### pypolca
+Path: /mount/britton/Jose/conda-envs/pypolca
+conda list: docs/conda_envs/pypolca.conda-list.txt
+environment export: docs/conda_envs/pypolca.environment.yml
+
+### quast
+Path: /mount/britton/Jose/conda-envs/quast
+conda list: docs/conda_envs/quast.conda-list.txt
+environment export: docs/conda_envs/quast.environment.yml
+
+### yak
+Path: /mount/britton/Jose/conda-envs/yak
+conda list: docs/conda_envs/yak.conda-list.txt
+environment export: docs/conda_envs/yak.environment.yml
+
+## Primary tool versions
 
 ### Porechop_ABI
 Conda env: /mount/britton/Jose/conda-envs/porechop_abi
-Command: conda run -p /mount/britton/Jose/conda-envs/porechop_abi porechop_abi --version
-
-EnvironmentLocationNotFound: Not a conda environment: /mount/britton/Jose/conda-envs/porechop_abi
+Command: /mount/britton/Jose/conda-envs/mamba/bin/conda run -p /mount/britton/Jose/conda-envs/porechop_abi bash -lc porechop_abi --version || porechop_abi -h | head -20
+bash: porechop_abi: command not found
+bash: porechop_abi: command not found
 
 
 ### Flye
 Conda env: /mount/britton/Jose/conda-envs/mamba/envs/autocycler_env
-Command: conda run -p /mount/britton/Jose/conda-envs/mamba/envs/autocycler_env flye --version
-
-EnvironmentLocationNotFound: Not a conda environment: /mount/britton/Jose/conda-envs/mamba/envs/autocycler_env
+Command: /mount/britton/Jose/conda-envs/mamba/bin/conda run -p /mount/britton/Jose/conda-envs/mamba/envs/autocycler_env flye --version
+2.9.6-b1802
 
 
 ### QUAST
 Conda env: /mount/britton/Jose/conda-envs/quast
-Command: conda run -p /mount/britton/Jose/conda-envs/quast quast.py --version
-
-EnvironmentLocationNotFound: Not a conda environment: /mount/britton/Jose/conda-envs/quast
+Command: /mount/britton/Jose/conda-envs/mamba/bin/conda run -p /mount/britton/Jose/conda-envs/quast quast.py --version
+QUAST v5.3.0
 
 
 ### CheckM
 Conda env: /mount/britton/Jose/conda-envs/checkm
-Command: conda run -p /mount/britton/Jose/conda-envs/checkm checkm -h
+Command: /mount/britton/Jose/conda-envs/mamba/bin/conda run -p /mount/britton/Jose/conda-envs/checkm bash -lc checkm version 2>/dev/null || checkm -h | head -20
+bash: checkm: command not found
 
-EnvironmentLocationNotFound: Not a conda environment: /mount/britton/Jose/conda-envs/checkm
+
+### CheckM2
+Conda env: /mount/britton/Jose/conda-envs/checkm2
+Command: /mount/britton/Jose/conda-envs/mamba/bin/conda run -p /mount/britton/Jose/conda-envs/checkm2 checkm2 --version
+1.1.0
 
 
 ### BUSCO
 Conda env: /mount/britton/Jose/conda-envs/busco
-Command: conda run -p /mount/britton/Jose/conda-envs/busco busco --version
-
-EnvironmentLocationNotFound: Not a conda environment: /mount/britton/Jose/conda-envs/busco
+Command: /mount/britton/Jose/conda-envs/mamba/bin/conda run -p /mount/britton/Jose/conda-envs/busco busco --version
+BUSCO 6.0.0
 
 
 ### Yak
 Conda env: /mount/britton/Jose/conda-envs/yak
-Command: conda run -p /mount/britton/Jose/conda-envs/yak yak
-
-EnvironmentLocationNotFound: Not a conda environment: /mount/britton/Jose/conda-envs/yak
+Command: /mount/britton/Jose/conda-envs/mamba/bin/conda run -p /mount/britton/Jose/conda-envs/yak bash -lc yak 2>&1 | head -10
+bash: yak: command not found
 
 
 ### Barrnap
 Conda env: /mount/britton/Jose/conda-envs/mamba/envs/barrnap_env
-Command: conda run -p /mount/britton/Jose/conda-envs/mamba/envs/barrnap_env barrnap --version
+Command: /mount/britton/Jose/conda-envs/mamba/bin/conda run -p /mount/britton/Jose/conda-envs/mamba/envs/barrnap_env barrnap --version
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+barrnap 0.9
 
-EnvironmentLocationNotFound: Not a conda environment: /mount/britton/Jose/conda-envs/mamba/envs/barrnap_env
-
-
-## Taxonomy and phylogeny tools
 
 ### NCBI datasets
 Conda env: /mount/britton/Jose/conda-envs/ncbi_datasets
-Command: conda run -p /mount/britton/Jose/conda-envs/ncbi_datasets datasets --version
-
-EnvironmentLocationNotFound: Not a conda environment: /mount/britton/Jose/conda-envs/ncbi_datasets
+Command: /mount/britton/Jose/conda-envs/mamba/bin/conda run -p /mount/britton/Jose/conda-envs/ncbi_datasets datasets --version
+datasets version: 18.2.0
 
 
 ### GTDB-Tk
 Conda env: /mount/britton/Jose/conda-envs/gtdbtk
-Command: conda run -p /mount/britton/Jose/conda-envs/gtdbtk gtdbtk --version
-
-EnvironmentLocationNotFound: Not a conda environment: /mount/britton/Jose/conda-envs/gtdbtk
+Command: /mount/britton/Jose/conda-envs/mamba/bin/conda run -p /mount/britton/Jose/conda-envs/gtdbtk gtdbtk --version
+gtdbtk: version 2.1.1 Copyright 2017 Pierre-Alain Chaumeil, Aaron Mussig and Donovan Parks
+There is a newer version of GTDB-Tk available: v2.7.1
 
 
 ### IQ-TREE 2
 Conda env: /mount/britton/Jose/conda-envs/iqtree
-Command: conda run -p /mount/britton/Jose/conda-envs/iqtree iqtree2 --version
+Command: /mount/britton/Jose/conda-envs/mamba/bin/conda run -p /mount/britton/Jose/conda-envs/iqtree iqtree2 --version
+IQ-TREE multicore version 2.3.6 for Linux x86 64-bit built Dec 11 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
 
-EnvironmentLocationNotFound: Not a conda environment: /mount/britton/Jose/conda-envs/iqtree
 
 
-## AAI tools
+### FastANI
+Conda env: /mount/britton/Jose/conda-envs/fastani
+Command: /mount/britton/Jose/conda-envs/mamba/bin/conda run -p /mount/britton/Jose/conda-envs/fastani fastANI --version
+version 1.34
 
-### EzAAI env check
+
+
+### Bakta
+Conda env: /mount/britton/Jose/conda-envs/bakta_env
+Command: /mount/britton/Jose/conda-envs/mamba/bin/conda run -p /mount/britton/Jose/conda-envs/bakta_env bakta --version
+bakta 1.9.3
+
+
+### DNAAPLER
+Conda env: /mount/britton/Jose/conda-envs/mamba/envs/dnaapler_env
+Command: /mount/britton/Jose/conda-envs/mamba/bin/conda run -p /mount/britton/Jose/conda-envs/mamba/envs/dnaapler_env dnaapler --version
+dnaapler, version 1.3.0
+
+
+### fastp
+Conda env: /mount/britton/Jose/conda-envs/fastp
+Command: /mount/britton/Jose/conda-envs/mamba/bin/conda run -p /mount/britton/Jose/conda-envs/fastp fastp --version
+fastp 0.24.2
+
+
+### NanoPlot
+Conda env: /mount/britton/Jose/conda-envs/NanoPlot
+Command: /mount/britton/Jose/conda-envs/mamba/bin/conda run -p /mount/britton/Jose/conda-envs/NanoPlot NanoPlot --version
+NanoPlot 1.46.0
+
+
+### Pypolca
+Conda env: /mount/britton/Jose/conda-envs/pypolca
+Command: /mount/britton/Jose/conda-envs/mamba/bin/conda run -p /mount/britton/Jose/conda-envs/pypolca pypolca --version
+pypolca, version 0.3.1
+
+
+
+### Polypolish-related env contents
+Conda env: /mount/britton/Jose/conda-envs/polypolish_polyca_bwa_bwa_mem2_samtools
+Command: /mount/britton/Jose/conda-envs/mamba/bin/conda run -p /mount/britton/Jose/conda-envs/polypolish_polyca_bwa_bwa_mem2_samtools bash -lc which polypolish || true; polypolish --version 2>/dev/null || true; bwa-mem2 version 2>&1 | head -5 || true; samtools --version | head -5 || true
+which: no polypolish in (/home/u233451/.cargo/bin:/mount/britton/Jose/conda-envs/mamba/bin:/mount/britton/Jose/conda-envs/mamba/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/var/GeoMxNGSPipeline:/home/u233451/.local/bin:/home/u233451/bin:/home/u233451/.local/bin:/home/u233451/bin)
+bash: samtools: command not found
+
+bash: bwa-mem2: command not found
+
+
+### EzAAI env contents
 Conda env: /mount/britton/Jose/conda-envs/mamba/envs/ezaai
-Command: conda run -p /mount/britton/Jose/conda-envs/mamba/envs/ezaai bash -lc which ezaai || which EzAAI || find "$CONDA_PREFIX" -maxdepth 3 -iname "*ezaai*" -o -iname "*.jar" | head -20
+Command: /mount/britton/Jose/conda-envs/mamba/bin/conda run -p /mount/britton/Jose/conda-envs/mamba/envs/ezaai bash -lc which ezaai || which EzAAI || find "$CONDA_PREFIX" -maxdepth 4 \( -iname "*ezaai*" -o -iname "*.jar" \) | head -40
+which: no ezaai in (/home/u233451/.cargo/bin:/mount/britton/Jose/conda-envs/mamba/bin:/mount/britton/Jose/conda-envs/mamba/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/var/GeoMxNGSPipeline:/home/u233451/.local/bin:/home/u233451/bin:/home/u233451/.local/bin:/home/u233451/bin)
+which: no EzAAI in (/home/u233451/.cargo/bin:/mount/britton/Jose/conda-envs/mamba/bin:/mount/britton/Jose/conda-envs/mamba/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/var/GeoMxNGSPipeline:/home/u233451/.local/bin:/home/u233451/bin:/home/u233451/.local/bin:/home/u233451/bin)
 
-EnvironmentLocationNotFound: Not a conda environment: /mount/britton/Jose/conda-envs/mamba/envs/ezaai
+/mount/britton/Jose/conda-envs/mamba/envs/ezaai
+/mount/britton/Jose/conda-envs/mamba/envs/ezaai/conda-meta/ezaai-1.2.4-hdfd78af_0.json
+/mount/britton/Jose/conda-envs/mamba/envs/ezaai/bin/EzAAI
+/mount/britton/Jose/conda-envs/mamba/envs/ezaai/bin/ezaai
+/mount/britton/Jose/conda-envs/mamba/envs/ezaai/lib/dt.jar
+/mount/britton/Jose/conda-envs/mamba/envs/ezaai/lib/jconsole.jar
+/mount/britton/Jose/conda-envs/mamba/envs/ezaai/lib/sa-jdi.jar
+/mount/britton/Jose/conda-envs/mamba/envs/ezaai/lib/tools.jar
+/mount/britton/Jose/conda-envs/mamba/envs/ezaai/share/ezaai-1.2.4-0
+/mount/britton/Jose/conda-envs/mamba/envs/bbtools/lib/dt.jar
+/mount/britton/Jose/conda-envs/mamba/envs/bbtools/lib/jconsole.jar
+/mount/britton/Jose/conda-envs/mamba/envs/bbtools/lib/sa-jdi.jar
+/mount/britton/Jose/conda-envs/mamba/envs/bbtools/lib/tools.jar
+/mount/britton/Jose/conda-envs/mamba/envs/circlator_env/lib/jrt-fs.jar
+/mount/britton/Jose/conda-envs/mamba/envs/circlator_env/lib/sa-jdi.jar
+/mount/britton/Jose/conda-envs/mamba/envs/circlator_env/lib/tools.jar
+/mount/britton/Jose/conda-envs/mamba/envs/circlator_env/lib/jconsole.jar
+/mount/britton/Jose/conda-envs/mamba/envs/circlator_env/lib/dt.jar
+/mount/britton/Jose/conda-envs/mamba/envs/circlator_env/libexec/mhap-2.1.2.jar
+/mount/britton/Jose/conda-envs/mamba/pkgs/java-jdk-8.0.92-1/lib/dt.jar
+/mount/britton/Jose/conda-envs/mamba/pkgs/java-jdk-8.0.92-1/lib/jconsole.jar
+/mount/britton/Jose/conda-envs/mamba/pkgs/java-jdk-8.0.92-1/lib/sa-jdi.jar
+/mount/britton/Jose/conda-envs/mamba/pkgs/java-jdk-8.0.92-1/lib/tools.jar
+/mount/britton/Jose/conda-envs/mamba/pkgs/kneaddata-0.12.0-py3h93c9fd6_0/bin/trimmomatic-0.33.jar
+/mount/britton/Jose/conda-envs/mamba/pkgs/canu-1.4-1/libexec/mhap-2.1.2.jar
+/mount/britton/Jose/conda-envs/mamba/pkgs/openjdk-11.0.1-h516909a_1016/lib/jrt-fs.jar
+/mount/britton/Jose/conda-envs/mamba/pkgs/openjdk-8.0.112-zulu8.19.0.1_3/lib/dt.jar
+/mount/britton/Jose/conda-envs/mamba/pkgs/openjdk-8.0.112-zulu8.19.0.1_3/lib/jconsole.jar
+/mount/britton/Jose/conda-envs/mamba/pkgs/openjdk-8.0.112-zulu8.19.0.1_3/lib/sa-jdi.jar
+/mount/britton/Jose/conda-envs/mamba/pkgs/openjdk-8.0.112-zulu8.19.0.1_3/lib/tools.jar
+/mount/britton/Jose/conda-envs/mamba/pkgs/ezaai-1.2.4-hdfd78af_0
+/mount/britton/Jose/conda-envs/mamba/pkgs/ezaai-1.2.4-hdfd78af_0/share/ezaai-1.2.4-0
+/mount/britton/Jose/conda-envs/mamba/pkgs/ezaai-1.2.4-hdfd78af_0/bin/EzAAI
+/mount/britton/Jose/conda-envs/mamba/pkgs/ezaai-1.2.4-hdfd78af_0/bin/ezaai
+/mount/britton/Jose/conda-envs/mamba/pkgs/openjdk-8.0.412-h2b85faf_2/lib/tools.jar
+/mount/britton/Jose/conda-envs/mamba/pkgs/openjdk-8.0.412-h2b85faf_2/lib/jconsole.jar
+/mount/britton/Jose/conda-envs/mamba/pkgs/openjdk-8.0.412-h2b85faf_2/lib/sa-jdi.jar
+/mount/britton/Jose/conda-envs/mamba/pkgs/openjdk-8.0.412-h2b85faf_2/lib/dt.jar
+/mount/britton/Jose/conda-envs/mamba/pkgs/ezaai-1.2.4-hdfd78af_0.tar.bz2
+/mount/britton/Jose/conda-envs/mamba/pkgs/sepp-4.5.5-py312h0fa9677_3/bin/seppJsonMerger.jar
 
 
-## Web services / visualization
+## Databases and web services
+
+### GTDB-Tk database
+GTDBTK_DATA_PATH=/mount/britton/leap/dbs/gtdbtk
 
 ### TYGS
 Service: Type (Strain) Genome Server
@@ -107,14 +422,57 @@ Job ID: 1437b825-85b8-4ebb-868c-ab4437c4d4f3
 Service: Interactive Tree Of Life
 Used for final tree visualization and manual label editing
 
-## Workflow files inspected
+## Workflow files scanned
+../2025-09-22-novel-isolate-closed-genome-trycycler-IJSEM-Criteria-Updates-nextflow-run/code/UPDATE_ME.sh
+../2025-09-22-novel-isolate-closed-genome-trycycler-IJSEM-Criteria-Updates-nextflow-run/code/clean_work_dir.sh
+../2025-09-22-novel-isolate-closed-genome-trycycler-IJSEM-Criteria-Updates-nextflow-run/code/run_archive.sh
+../2025-09-22-novel-isolate-closed-genome-trycycler-IJSEM-Criteria-Updates-nextflow-run/code/tidy-transfer-create-log.sh
+../2025-09-22-novel-isolate-closed-genome-trycycler-IJSEM-Criteria-Updates-nextflow-run/code/tidy-transfer-read-log.sh
+../2025-09-22-novel-isolate-closed-genome-trycycler-IJSEM-Criteria-Updates-nextflow-run/workflow/generate_nextflow_csv.py
+../2025-09-22-novel-isolate-closed-genome-trycycler-IJSEM-Criteria-Updates-nextflow-run/workflow/hybrid_closed_assembly.conf
+../2025-09-22-novel-isolate-closed-genome-trycycler-IJSEM-Criteria-Updates-nextflow-run/workflow/hybrid_closed_assembly.nf
+../2025-09-22-novel-isolate-closed-genome-trycycler-IJSEM-Criteria-Updates-nextflow-run/workflow/hybrid_closed_assembly.sh
+../2025-09-30-obtain-ANI-results-type-strain-nextflow-run/workflow/ani_current_workflow.conf
+../2025-09-30-obtain-ANI-results-type-strain-nextflow-run/workflow/ani_current_workflow.nf
+../2025-09-30-obtain-ANI-results-type-strain-nextflow-run/workflow/ani_current_workflow.sh
+../2025-09-30-obtain-ANI-results-type-strain-nextflow-run/workflow/ani_fastani_only_no_gtdbtk_version.conf
+../2025-09-30-obtain-ANI-results-type-strain-nextflow-run/workflow/ani_fastani_only_no_gtdbtk_version.nf
+../2025-09-30-obtain-ANI-results-type-strain-nextflow-run/workflow/ani_fastani_only_no_gtdbtk_version.sh
+../2025-09-30-obtain-ANI-results-type-strain-nextflow-run/workflow/ani_old_workflow.conf
+../2025-09-30-obtain-ANI-results-type-strain-nextflow-run/workflow/ani_old_workflow.nf
+../2025-09-30-obtain-ANI-results-type-strain-nextflow-run/workflow/ani_old_workflow.sh
+../2025-09-30-obtain-ANI-results-type-strain-nextflow-run/workflow/gtdb_tax_tokens.py
+../2025-10-04-Obtaining-AAI-Results-and-Tree-Nextflow-run/workflow/aii_run_.conf
+../2025-10-04-Obtaining-AAI-Results-and-Tree-Nextflow-run/workflow/aii_run_.nf
+../2025-10-04-Obtaining-AAI-Results-and-Tree-Nextflow-run/workflow/aii_run_.sh
+../2025-10-04-Obtaining-AAI-Results-and-Tree-Nextflow-run/workflow/stage_genome.py
+../2026-04-24-Finalized-Phylogram-Type-Species-Only-Tree-Genus-Nextflow-Run/code/collect_qc_stats.py
+../2026-04-24-Finalized-Phylogram-Type-Species-Only-Tree-Genus-Nextflow-Run/workflow/generate_nextflow_csv.py
+../2026-04-24-Finalized-Phylogram-Type-Species-Only-Tree-Genus-Nextflow-Run/workflow/phylogenetic_tree_genus.conf
+../2026-04-24-Finalized-Phylogram-Type-Species-Only-Tree-Genus-Nextflow-Run/workflow/phylogenetic_tree_genus.nf
+../2026-04-24-Finalized-Phylogram-Type-Species-Only-Tree-Genus-Nextflow-Run/workflow/phylogenetic_tree_genus.sh
+../2026-04-24-Finalized-Phylogram-Type-Species-Only-Tree-Genus-Nextflow-Run/workflow/stage_genome.py
+./assembly_qc/support_history/2025-12-15-insilico/workflow/checking_if_closable.sh
+./assembly_qc/support_history/2025-12-15-insilico/workflow/in-silico-filtering-flye-raven-assembly-run.sh
+./assembly_qc/workflow_backbone/generate_nextflow_csv.py
 ./assembly_qc/workflow_backbone/hybrid_closed_assembly.conf
 ./assembly_qc/workflow_backbone/hybrid_closed_assembly.nf
 ./assembly_qc/workflow_backbone/hybrid_closed_assembly.sh
-./collect_versions.sh
+./collect_versions_cluster.sh
 ./genus_identity/aai/workflow/aii_run_.conf
 ./genus_identity/aai/workflow/aii_run_.nf
 ./genus_identity/aai/workflow/aii_run_.sh
+./genus_identity/aai/workflow/stage_genome.py
+./genus_identity/phylogeny/workflow/generate_nextflow_csv.py
 ./genus_identity/phylogeny/workflow/phylogenetic_tree_genus.conf
 ./genus_identity/phylogeny/workflow/phylogenetic_tree_genus.nf
 ./genus_identity/phylogeny/workflow/phylogenetic_tree_genus.sh
+./genus_identity/phylogeny/workflow/stage_genome.py
+./run_collect_versions.sh
+./species_identity/ani/archive/current_failed_type_enforced/ani_current_workflow.conf
+./species_identity/ani/archive/current_failed_type_enforced/ani_current_workflow.nf
+./species_identity/ani/archive/current_failed_type_enforced/ani_current_workflow.sh
+./species_identity/ani/archive/current_failed_type_enforced/gtdb_tax_tokens.py
+./species_identity/ani/archive/old_success/ani_old_workflow.conf
+./species_identity/ani/archive/old_success/ani_old_workflow.nf
+./species_identity/ani/archive/old_success/ani_old_workflow.sh

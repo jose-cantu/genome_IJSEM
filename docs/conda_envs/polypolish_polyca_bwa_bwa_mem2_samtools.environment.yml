@@ -1,0 +1,6 @@
+name: /mount/britton/Jose/conda-envs/polypolish_polyca_bwa_bwa_mem2_samtools
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+prefix: /mount/britton/Jose/conda-envs/polypolish_polyca_bwa_bwa_mem2_samtools

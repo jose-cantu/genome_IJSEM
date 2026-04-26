@@ -1,0 +1,17 @@
+analysis_steptoolversion/source
+WorkflowNextflow23.10.0 for final strict phylogeny workflow; 23.10.1 in ANI provenance workflow logs
+Read trimmingPorechop_ABIRecorded in conda env export; direct version command unavailable
+AssemblyFlye2.9.6-b1802
+Assembly QCQUAST5.3.0
+Assembly QCCheckMCheckM v1.2.4 from prior CheckM output; conda env exported
+Assembly QCCheckM21.1.0
+Assembly QCBUSCO6.0.0
+16S rRNA detectionBarrnap0.9Assembly QCYA
+Reference downloadNCBI datasets CLI18.2.0
+Species-level taxonomyTYGS/GGDCTYGS result date 2025-09-30; job ID 1437b825-85b8-4ebb-868c-ab4437c4d4f3
+AAIEzAAI1.2.4
+Phylogenomic alignmentGTDB-Tk2.1.1
+Tree inferenceIQ-TREE2.3.6
+Tree visualizationiTOLWeb service; used for final tree visualization/manual label editing
+ANI provenanceFastANI1.34
+Annotation/provenanceBakta1.9.3

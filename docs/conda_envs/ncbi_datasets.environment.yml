@@ -1,0 +1,27 @@
+name: /mount/britton/Jose/conda-envs/ncbi_datasets
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1
+  - _openmp_mutex=4.5
+  - ca-certificates=2025.4.26
+  - coreutils=9.5
+  - fastani=1.34
+  - gsl=2.8
+  - jq=1.8.1
+  - libblas=3.9.0
+  - libcblas=3.9.0
+  - libgcc=15.1.0
+  - libgcc-ng=15.1.0
+  - libgfortran=15.1.0
+  - libgfortran5=15.1.0
+  - libgomp=15.1.0
+  - libopenblas=0.3.30
+  - libstdcxx=15.1.0
+  - libzlib=1.3.1
+  - ncbi-datasets-cli=18.2.0
+  - oniguruma=6.9.10
+  - unzip=6.0
+prefix: /mount/britton/Jose/conda-envs/ncbi_datasets

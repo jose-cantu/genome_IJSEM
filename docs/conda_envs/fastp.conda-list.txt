@@ -1,0 +1,11 @@
+# packages in environment at /mount/britton/Jose/conda-envs/fastp:
+#
+# Name                     Version          Build            Channel
+_libgcc_mutex              0.1              conda_forge      conda-forge
+_openmp_mutex              4.5              2_gnu            conda-forge
+fastp                      0.24.2           heae3180_0       bioconda
+isa-l                      2.31.1           hb9d3cd8_1       conda-forge
+libdeflate                 1.22             hb9d3cd8_0       conda-forge
+libgcc                     15.1.0           h767d61c_2       conda-forge
+libgomp                    15.1.0           h767d61c_2       conda-forge
+libstdcxx                  15.1.0           h8f9b012_2       conda-forge

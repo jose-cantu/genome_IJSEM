@@ -1,3 +1,9 @@
 work/
 .nextflow/
 *.zip
+
+# Runtime logs
+logs/
+slurm-*.out
+*.err
+*.out

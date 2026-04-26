@@ -1,0 +1,3 @@
+# packages in environment at /mount/britton/Jose/conda-envs/polypolish_polyca_bwa_bwa_mem2_samtools:
+#
+# Name                     Version          Build            Channel
