@@ -106,7 +106,7 @@ In practice, this means overall depth is high, but **most reads are much shorter
 
 Bridging diagnostics were also not strongly supportive of confident closure:
 - **20 kb end-window comparison:** **0 shared reads** across orientations
-- **50–100 kb windows:** some shared reads were observed, but the signal was interpreted as **weak/ambiguous** and likely influenced by repeat-associated mappings rather than unique bridging evidence
+- **50-100 kb windows:** some shared reads were observed, but the signal was interpreted as **weak/ambiguous** and likely influenced by repeat-associated mappings rather than unique bridging evidence
 
 ### Assembly context
 
