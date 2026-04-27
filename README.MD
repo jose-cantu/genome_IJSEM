@@ -6,7 +6,9 @@ Genome-taxonomy and manuscript-support repository for **Strain Pseudo**, a candi
 
 Generate a publication-grade genome assembly for Strain Pseudo and evaluate whether it represents a **novel species** and potentially a **novel genus** using genome-based taxonomy workflows aligned with IJSEM expectations.
 
-## Current status
+## Current final status
+
+This repository is now finalized as a manuscript-support and provenance repository for the current Pseudo genome taxonomy analysis. All major analysis needed for the current draft has been processed and staged. 
 
 ## Evidence hierarchy
 
@@ -198,20 +200,23 @@ Repository-level provenance notes.
 
 ## What is finalized vs still being curated
 
-### Finalized enough for repo provenance
-- workflow backbone organization
-- selected taxonomy assembly summary
-- TYGS/dDDH evidence
-- EzAAI module
-- ANI provenance split into old-success vs current-failed
-- genus phylogeny workflow/results staging
+### Finalized Analysis Modules 
 
-### Still under active scientific curation
-- strict type-strain/type-species bac120/IQ-TREE genus tree
-- final iTOL SVG export for the strict tree
-- final reference curation notes
-- final methods/results wording
-- software versions file
+- assembly/QC workflow organization and final taxonomy-facing assembly summary
+- TYGS/dDDH species-level evidence
+- EzAAI genus-neighbourhood evidence
+- strict type-strain/type-species bac120/IQ-TREE genus-placement phylogeny
+- ANI provenance split into old-success versus current-failed/type-enforced attempts
+- TYGS genome and 16S GBDP phylograms as supplementary context
+- software version and conda-environment provenance records
+- Methods/Results draft prepared for collaborator review
+
+### Remaining decisions outside the repo 
+
+The main remaining issue is nomenclatural rather than computational. Strain Pseudo is supported as a candidate novel species with the provisional "Vermiculatibacterium agrestimuris" lineage, but "Vermiculatibacterium" is not currently validly published. Therefore, formal naming depends on selected by my collaborator:
+
+a) pursue formal nomenclature by validating and coordinating with original authors of "Vermiculatibacterium"; or 
+b) submit the work as a taxgenomic/phylogenomic characterization of strain Pseduo, with formal naming deferred pending validation or revision of that genus-level lineage. 
 
 ## Provenance principle
 
