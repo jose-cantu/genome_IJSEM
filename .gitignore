@@ -7,3 +7,7 @@ logs/
 slurm-*.out
 *.err
 *.out
+# Large Flye repeat-resolution intermediate files
+assembly_qc/results/final_taxonomy_assembly/flye/20-repeat/read_alignment_dump
+assembly_qc/results/final_taxonomy_assembly/flye/20-repeat/repeat_graph_dump
+assembly_qc/results/final_taxonomy_assembly/flye/20-repeat/*.fasta
