@@ -24,8 +24,8 @@ The current assembly used for downstream taxonomy comparisons is `assembly.polis
 
 **Selected taxonomy assembly**
 - Selected as the current best assembly for taxonomy comparisons
-- Size: **2,617,187 bp**
-- GC: **59.52%**
+- Size: **2,575,873  bp**
+- GC: **59.68%**
 - TYGS proteins: **2,593**
 
 **QC summary for the selected assembly**
