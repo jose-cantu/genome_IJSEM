@@ -174,6 +174,7 @@ So while the genome is not closed, the current evidence suggests that this is a 
 Main assembly/QC workflow backbone and the selected summary artifacts used for manuscript-relevant assembly evaluation.
 - `workflow_backbone/` = main workflow scripts from the IJSEM-oriented assembly/QC backbone
 - `results/2025-09-22/` = selected summary artifacts (QUAST, CheckM, BUSCO, Yak, 16S)
+-  `finalized_assembly_taxonomy` = what was used for all downstream modeling needs
 - `support_history/2025-12-15-insilico/` = closure-support experiments and exploratory repeat-resolution work
 
 ### `species_identity/ani/`
