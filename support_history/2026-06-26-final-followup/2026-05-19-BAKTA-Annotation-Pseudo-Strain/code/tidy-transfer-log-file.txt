@@ -1,0 +1,3 @@
+Symbolic Link: /mount/britton/Jose/Jobs/U24_Projects/2024-09-06-WGS-13-isolates/Jobs/2024-09-09-run-GTDBTK-no-nextflow/workflow-outputs/gtdbtk_output/gtdbtk.bac120.summary.tsv
+Target File : /mount/britton/Jose/Jobs/U24_Projects/2024-09-06-WGS-13-isolates/Jobs/2024-09-09-run-GTDBTK-no-nextflow/workflow-outputs/gtdbtk_output/classify/gtdbtk.bac120.summary.tsv
+--------------------------

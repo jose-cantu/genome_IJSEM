@@ -1,0 +1,23 @@
+Assembly	GCF_014287895.1
+# contigs (>= 0 bp)	115
+# contigs (>= 1000 bp)	79
+# contigs (>= 5000 bp)	52
+# contigs (>= 10000 bp)	45
+# contigs (>= 25000 bp)	32
+# contigs (>= 50000 bp)	22
+Total length (>= 0 bp)	3499704
+Total length (>= 1000 bp)	3475865
+Total length (>= 5000 bp)	3419627
+Total length (>= 10000 bp)	3367485
+Total length (>= 25000 bp)	3132679
+Total length (>= 50000 bp)	2789996
+# contigs	115
+Largest contig	371474
+Total length	3499704
+GC (%)	60.31
+N50	120007
+N90	23803
+auN	148079.0
+L50	9
+L90	33
+# N's per 100 kbp	0.00

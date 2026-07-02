@@ -1,0 +1,430 @@
+May-24 12:34:13.128 [main] DEBUG nextflow.cli.Launcher - $> nextflow run /mount/britton/Jose/DBs/github_repos_with_commit_updates_ahead_of_conda_package_tool/consprot/consprot/workflow/main.nf -params-file params.yaml -c nextflow.config -resume
+May-24 12:34:13.265 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.04.3
+May-24 12:34:13.344 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/u233451/.nextflow/plugins; core-plugins: nf-amazon@1.16.2,nf-azure@1.0.1,nf-codecommit@0.1.4,nf-console@1.0.5,nf-ga4gh@1.0.5,nf-google@1.7.3,nf-tower@1.5.12,nf-wave@0.8.4
+May-24 12:34:13.360 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+May-24 12:34:13.362 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+May-24 12:34:13.365 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+May-24 12:34:13.385 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+May-24 12:34:13.422 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /mount/britton/Jose/DBs/github_repos_with_commit_updates_ahead_of_conda_package_tool/consprot/consprot/workflow/nextflow.config
+May-24 12:34:13.424 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /mount/britton/Jose/Jobs/Jason/2026-05-19-POCPu-Psuedo-Strain-Plus-Panel-From-POCP-Run/workflow/nextflow.config
+May-24 12:34:13.430 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /mount/britton/Jose/Jobs/Jason/2026-05-19-POCPu-Psuedo-Strain-Plus-Panel-From-POCP-Run/workflow/nextflow.config
+May-24 12:34:13.430 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /mount/britton/Jose/DBs/github_repos_with_commit_updates_ahead_of_conda_package_tool/consprot/consprot/workflow/nextflow.config
+May-24 12:34:13.430 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /mount/britton/Jose/Jobs/Jason/2026-05-19-POCPu-Psuedo-Strain-Plus-Panel-From-POCP-Run/workflow/nextflow.config
+May-24 12:34:13.431 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /mount/britton/Jose/Jobs/Jason/2026-05-19-POCPu-Psuedo-Strain-Plus-Panel-From-POCP-Run/workflow/nextflow.config
+May-24 12:34:13.586 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+May-24 12:34:14.666 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+May-24 12:34:14.770 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+May-24 12:34:14.799 [main] WARN  nextflow.config.ConfigBuilder - It appears you have never run this project before -- Option `-resume` is ignored
+May-24 12:34:14.861 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+May-24 12:34:14.930 [main] INFO  nextflow.cli.CmdRun - Launching `/mount/britton/Jose/DBs/github_repos_with_commit_updates_ahead_of_conda_package_tool/consprot/consprot/workflow/main.nf` [admiring_swartz] DSL2 - revision: 4839a3c760
+May-24 12:34:14.930 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+May-24 12:34:14.930 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+May-24 12:34:14.967 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /home/u233451/.nextflow/secrets/store.json
+May-24 12:34:14.973 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@2da66a44] - activable => nextflow.secret.LocalSecretsProvider@2da66a44
+May-24 12:34:15.073 [main] DEBUG nextflow.Session - Session UUID: f2e39e66-6b00-48a1-8d38-3df5f59b7c05
+May-24 12:34:15.073 [main] DEBUG nextflow.Session - Run name: admiring_swartz
+May-24 12:34:15.073 [main] DEBUG nextflow.Session - Executor pool size: 2
+May-24 12:34:15.088 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=10; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+May-24 12:34:15.135 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.04.3 build 5875
+  Created: 11-08-2023 18:37 UTC (13:37 CDT)
+  System: Linux 3.10.0-1160.119.1.el7.x86_64
+  Runtime: Groovy 3.0.16 on OpenJDK 64-Bit Server VM 17.0.15-internal+0-adhoc..src
+  Encoding: UTF-8 (ANSI_X3.4-1968)
+  Process: 21149@compute-9-1.mab [192.168.5.101]
+  CPUs: 2 - Mem: 64 GB (63.7 GB) - Swap: 0 (0)
+May-24 12:34:15.200 [main] DEBUG nextflow.Session - Work-dir: /mount/britton/Jose/Jobs/Jason/2026-05-19-POCPu-Psuedo-Strain-Plus-Panel-From-POCP-Run/workflow/work [nfs]
+May-24 12:34:15.201 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /mount/britton/Jose/DBs/github_repos_with_commit_updates_ahead_of_conda_package_tool/consprot/consprot/workflow/bin
+May-24 12:34:15.222 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+May-24 12:34:15.235 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+May-24 12:34:15.269 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+May-24 12:34:15.328 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 3; maxThreads: 1000
+May-24 12:34:15.480 [main] DEBUG nextflow.Session - Session start
+May-24 12:34:16.238 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+May-24 12:34:17.883 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-24 12:34:17.884 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+May-24 12:34:17.898 [main] DEBUG nextflow.executor.Executor - [warm up] executor > slurm
+May-24 12:34:17.908 [main] DEBUG n.processor.TaskPollingMonitor - Creating task monitor for executor 'slurm' > capacity: 100; pollInterval: 5s; dumpInterval: 5m 
+May-24 12:34:17.912 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'slurm' > queue-stat-interval: 1m
+May-24 12:34:18.008 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-24 12:34:18.008 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+May-24 12:34:18.018 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-24 12:34:18.018 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+May-24 12:34:18.023 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-24 12:34:18.023 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+May-24 12:34:18.088 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:DIAMOND_BLASTP` matches process DIAMOND_BLASTP
+May-24 12:34:18.093 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-24 12:34:18.097 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+May-24 12:34:18.111 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-24 12:34:18.111 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+May-24 12:34:18.122 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+May-24 12:34:18.123 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+May-24 12:34:18.129 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: FILTER_MATCHES, DIAMOND_DBINFO, DIAMOND_MAKEDB, COMPUTE_POCPU, PYRODIGAL, DIAMOND_BLASTP, COUNT_PROTEINS
+May-24 12:34:18.130 [main] DEBUG nextflow.Session - Igniting dataflow network (10)
+May-24 12:34:18.136 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PYRODIGAL
+May-24 12:34:18.136 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DIAMOND_MAKEDB
+May-24 12:34:18.136 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DIAMOND_DBINFO
+May-24 12:34:18.136 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > COUNT_PROTEINS
+May-24 12:34:18.145 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /mount/britton/Jose/Jobs/Jason/2026-05-19-POCPu-Psuedo-Strain-Plus-Panel-From-POCP-Run/data/genomes/; pattern: *.fa; options: [checkIfExists:false]
+May-24 12:34:18.150 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > DIAMOND_BLASTP
+May-24 12:34:18.150 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FILTER_MATCHES
+May-24 12:34:18.150 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > COMPUTE_POCPU
+May-24 12:34:18.150 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+May-24 12:34:18.150 [main] DEBUG nextflow.Session - Session await
+May-24 12:34:18.162 [PathVisitor-2] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /mount/britton/Jose/Jobs/Jason/2026-05-19-POCPu-Psuedo-Strain-Plus-Panel-From-POCP-Run/data/genomes/; pattern: *.fna; options: [checkIfExists:false, syntax:glob, type:file]
+May-24 12:34:18.187 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /mount/britton/Jose/Jobs/Jason/2026-05-19-POCPu-Psuedo-Strain-Plus-Panel-From-POCP-Run/data/genomes/; pattern: *.fasta; options: [checkIfExists:false, syntax:glob, type:file]
+May-24 12:34:18.346 [Actor Thread 4] INFO  nextflow.conda.CondaCache - Creating env using mamba: /mount/britton/Jose/DBs/github_repos_with_commit_updates_ahead_of_conda_package_tool/consprot/consprot/workflow/./modules/nf-core/pyrodigal/environment.yml [cache /mount/britton/Jose/DBs/github_repos_with_commit_updates_ahead_of_conda_package_tool/consprot/consprot/workflow/conda/environment-309a4adab0a97232b783922e95c24ee8]
+May-24 12:39:22.954 [Task monitor] DEBUG n.processor.TaskPollingMonitor - No more task to compute -- The following nodes are still active:
+[process] PYRODIGAL
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] DIAMOND_MAKEDB
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] DIAMOND_DBINFO
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] COUNT_PROTEINS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] DIAMOND_BLASTP
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (queue) OPEN  ; channel: -
+  port 2: (value) bound ; channel: out_ext
+  port 3: (value) bound ; channel: blast_columns
+  port 4: (cntrl) -     ; channel: $
+
+[process] FILTER_MATCHES
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] COMPUTE_POCPU
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: proteins
+  port 1: (queue) OPEN  ; channel: matches
+  port 2: (cntrl) -     ; channel: $
+
+May-24 12:44:22.971 [Task monitor] DEBUG n.processor.TaskPollingMonitor - No more task to compute -- The following nodes are still active:
+[process] PYRODIGAL
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] DIAMOND_MAKEDB
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] DIAMOND_DBINFO
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] COUNT_PROTEINS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] DIAMOND_BLASTP
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (queue) OPEN  ; channel: -
+  port 2: (value) bound ; channel: out_ext
+  port 3: (value) bound ; channel: blast_columns
+  port 4: (cntrl) -     ; channel: $
+
+[process] FILTER_MATCHES
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] COMPUTE_POCPU
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: proteins
+  port 1: (queue) OPEN  ; channel: matches
+  port 2: (cntrl) -     ; channel: $
+
+May-24 12:49:22.988 [Task monitor] DEBUG n.processor.TaskPollingMonitor - No more task to compute -- The following nodes are still active:
+[process] PYRODIGAL
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] DIAMOND_MAKEDB
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] DIAMOND_DBINFO
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] COUNT_PROTEINS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] DIAMOND_BLASTP
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (queue) OPEN  ; channel: -
+  port 2: (value) bound ; channel: out_ext
+  port 3: (value) bound ; channel: blast_columns
+  port 4: (cntrl) -     ; channel: $
+
+[process] FILTER_MATCHES
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] COMPUTE_POCPU
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: proteins
+  port 1: (queue) OPEN  ; channel: matches
+  port 2: (cntrl) -     ; channel: $
+
+May-24 12:54:18.377 [Actor Thread 3] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=PYRODIGAL (1); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: mamba env create --prefix /mount/britton/Jose/DBs/github_repos_with_commit_updates_ahead_of_conda_package_tool/consprot/consprot/workflow/conda/environment-309a4adab0a97232b783922e95c24ee8 --file /mount/britton/Jose/DBs/github_repos_with_commit_updates_ahead_of_conda_package_tool/consprot/consprot/workflow/./modules/nf-core/pyrodigal/environment.yml
+  status : 143
+  message:
+    warning  libmamba 'repo.anaconda.com', a commercial channel hosted by Anaconda.com, is used.
+        
+    warning  libmamba Please make sure you understand Anaconda Terms of Services.
+        
+    warning  libmamba See: https://legal.anaconda.com/policies/en/
+
+May-24 12:54:18.405 [Actor Thread 3] ERROR nextflow.processor.TaskProcessor - Error executing process > 'PYRODIGAL (1)'
+
+Caused by:
+  Failed to create Conda environment
+  command: mamba env create --prefix /mount/britton/Jose/DBs/github_repos_with_commit_updates_ahead_of_conda_package_tool/consprot/consprot/workflow/conda/environment-309a4adab0a97232b783922e95c24ee8 --file /mount/britton/Jose/DBs/github_repos_with_commit_updates_ahead_of_conda_package_tool/consprot/consprot/workflow/./modules/nf-core/pyrodigal/environment.yml
+  status : 143
+  message:
+    warning  libmamba 'repo.anaconda.com', a commercial channel hosted by Anaconda.com, is used.
+        
+    warning  libmamba Please make sure you understand Anaconda Terms of Services.
+        
+    warning  libmamba See: https://legal.anaconda.com/policies/en/
+
+
+java.lang.IllegalStateException: java.lang.IllegalStateException: Failed to create Conda environment
+  command: mamba env create --prefix /mount/britton/Jose/DBs/github_repos_with_commit_updates_ahead_of_conda_package_tool/consprot/consprot/workflow/conda/environment-309a4adab0a97232b783922e95c24ee8 --file /mount/britton/Jose/DBs/github_repos_with_commit_updates_ahead_of_conda_package_tool/consprot/consprot/workflow/./modules/nf-core/pyrodigal/environment.yml
+  status : 143
+  message:
+    warning  libmamba 'repo.anaconda.com', a commercial channel hosted by Anaconda.com, is used.
+        
+    warning  libmamba Please make sure you understand Anaconda Terms of Services.
+        
+    warning  libmamba See: https://legal.anaconda.com/policies/en/
+
+	at nextflow.conda.CondaCache.getCachePathFor(CondaCache.groovy:378)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSite.invoke(PogoMetaMethodSite.java:166)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:69)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at nextflow.processor.TaskRun.getCondaEnv0(TaskRun.groovy:596)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:362)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:176)
+	at nextflow.processor.TaskRun$_getCondaEnv_closure5.doCall(TaskRun.groovy:588)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:274)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at org.codehaus.groovy.runtime.ConvertedClosure.invokeCustom(ConvertedClosure.java:50)
+	at org.codehaus.groovy.runtime.ConversionHandler.invoke(ConversionHandler.java:112)
+	at jdk.proxy1/jdk.proxy1.$Proxy30.apply(Unknown Source)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrap.invoke(PojoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at nextflow.processor.TaskRun.getCondaEnv(TaskRun.groovy:588)
+	at nextflow.processor.TaskRun$getCondaEnv$5.call(Unknown Source)
+	at nextflow.processor.TaskProcessor.createTaskHashKey(TaskProcessor.groovy:2097)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:189)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at nextflow.processor.TaskProcessor.invokeTask(TaskProcessor.groovy:617)
+	at nextflow.processor.InvokeTaskAdapter.call(InvokeTaskAdapter.groovy:52)
+	at groovyx.gpars.dataflow.operator.DataflowOperatorActor.startTask(DataflowOperatorActor.java:120)
+	at groovyx.gpars.dataflow.operator.ForkingDataflowOperatorActor.access$001(ForkingDataflowOperatorActor.java:35)
+	at groovyx.gpars.dataflow.operator.ForkingDataflowOperatorActor$1.run(ForkingDataflowOperatorActor.java:58)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.IllegalStateException: Failed to create Conda environment
+  command: mamba env create --prefix /mount/britton/Jose/DBs/github_repos_with_commit_updates_ahead_of_conda_package_tool/consprot/consprot/workflow/conda/environment-309a4adab0a97232b783922e95c24ee8 --file /mount/britton/Jose/DBs/github_repos_with_commit_updates_ahead_of_conda_package_tool/consprot/consprot/workflow/./modules/nf-core/pyrodigal/environment.yml
+  status : 143
+  message:
+    warning  libmamba 'repo.anaconda.com', a commercial channel hosted by Anaconda.com, is used.
+        
+    warning  libmamba Please make sure you understand Anaconda Terms of Services.
+        
+    warning  libmamba See: https://legal.anaconda.com/policies/en/
+
+	at nextflow.conda.CondaCache.runCommand(CondaCache.groovy:327)
+	at nextflow.conda.CondaCache.createLocalCondaEnv0(CondaCache.groovy:299)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1258)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:1036)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:1019)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethodSafe(InvokerHelper.java:97)
+	at nextflow.conda.CondaCache$_createLocalCondaEnv_closure1.doCall(CondaCache.groovy:256)
+	at nextflow.conda.CondaCache$_createLocalCondaEnv_closure1.call(CondaCache.groovy)
+	at nextflow.file.FileMutex.lock(FileMutex.groovy:106)
+	at nextflow.conda.CondaCache.createLocalCondaEnv(CondaCache.groovy:256)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1258)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:1036)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:1019)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethodSafe(InvokerHelper.java:97)
+	at nextflow.conda.CondaCache$_getLazyImagePath_closure3.doCall(CondaCache.groovy:355)
+	at nextflow.conda.CondaCache$_getLazyImagePath_closure3.call(CondaCache.groovy)
+	at groovyx.gpars.dataflow.LazyDataflowVariable$1.run(LazyDataflowVariable.java:70)
+	... 3 common frames omitted
+May-24 12:54:18.410 [Actor Thread 3] DEBUG nextflow.Session - Session aborted -- Cause: java.lang.IllegalStateException: Failed to create Conda environment
+  command: mamba env create --prefix /mount/britton/Jose/DBs/github_repos_with_commit_updates_ahead_of_conda_package_tool/consprot/consprot/workflow/conda/environment-309a4adab0a97232b783922e95c24ee8 --file /mount/britton/Jose/DBs/github_repos_with_commit_updates_ahead_of_conda_package_tool/consprot/consprot/workflow/./modules/nf-core/pyrodigal/environment.yml
+  status : 143
+  message:
+    warning  libmamba 'repo.anaconda.com', a commercial channel hosted by Anaconda.com, is used.
+        
+    warning  libmamba Please make sure you understand Anaconda Terms of Services.
+        
+    warning  libmamba See: https://legal.anaconda.com/policies/en/
+
+May-24 12:54:18.416 [Actor Thread 3] DEBUG nextflow.Session - The following nodes are still active:
+[process] PYRODIGAL
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] DIAMOND_MAKEDB
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] DIAMOND_DBINFO
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] COUNT_PROTEINS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] DIAMOND_BLASTP
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (queue) OPEN  ; channel: -
+  port 2: (value) bound ; channel: out_ext
+  port 3: (value) bound ; channel: blast_columns
+  port 4: (cntrl) -     ; channel: $
+
+[process] FILTER_MATCHES
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] COMPUTE_POCPU
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: proteins
+  port 1: (queue) OPEN  ; channel: matches
+  port 2: (cntrl) -     ; channel: $
+
+May-24 12:54:18.417 [main] DEBUG nextflow.Session - Session await > all processes finished
+May-24 12:54:18.417 [main] DEBUG nextflow.Session - Session await > all barriers passed
+May-24 12:54:18.422 [main] INFO  nextflow.script.BaseScript - 
+        Failed: Error executing process > 'PYRODIGAL (1)'
+
+Caused by:
+  Failed to create Conda environment
+  command: mamba env create --prefix /mount/britton/Jose/DBs/github_repos_with_commit_updates_ahead_of_conda_package_tool/consprot/consprot/workflow/conda/environment-309a4adab0a97232b783922e95c24ee8 --file /mount/britton/Jose/DBs/github_repos_with_commit_updates_ahead_of_conda_package_tool/consprot/consprot/workflow/./modules/nf-core/pyrodigal/environment.yml
+  status : 143
+  message:
+    warning  libmamba 'repo.anaconda.com', a commercial channel hosted by Anaconda.com, is used.
+        
+    warning  libmamba Please make sure you understand Anaconda Terms of Services.
+        
+    warning  libmamba See: https://legal.anaconda.com/policies/en/
+
+
+        exit status : null
+        
+May-24 12:54:18.423 [Actor Thread 4] DEBUG nextflow.file.SortFileCollector - FileCollector temp dir not removed: null
+May-24 12:54:18.429 [Actor Thread 1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=PYRODIGAL; work-dir=null
+  error [java.lang.IllegalStateException]: Cannot obtain the semaphore to fork operator's body.
+May-24 12:54:18.429 [Actor Thread 10] DEBUG nextflow.file.SortFileCollector - FileCollector temp dir not removed: null
+May-24 12:54:18.429 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+May-24 12:54:18.429 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+May-24 12:54:18.430 [Actor Thread 5] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=PYRODIGAL (2); work-dir=null
+  error [java.lang.IllegalStateException]: java.lang.IllegalStateException: Failed to create Conda environment
+  command: mamba env create --prefix /mount/britton/Jose/DBs/github_repos_with_commit_updates_ahead_of_conda_package_tool/consprot/consprot/workflow/conda/environment-309a4adab0a97232b783922e95c24ee8 --file /mount/britton/Jose/DBs/github_repos_with_commit_updates_ahead_of_conda_package_tool/consprot/consprot/workflow/./modules/nf-core/pyrodigal/environment.yml
+  status : 143
+  message:
+    warning  libmamba 'repo.anaconda.com', a commercial channel hosted by Anaconda.com, is used.
+        
+    warning  libmamba Please make sure you understand Anaconda Terms of Services.
+        
+    warning  libmamba See: https://legal.anaconda.com/policies/en/
+
+May-24 12:54:18.434 [main] DEBUG nextflow.trace.ReportObserver - Execution report summary data:
+  []
+May-24 12:54:19.214 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+May-24 12:54:19.278 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

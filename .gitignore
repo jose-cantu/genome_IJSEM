@@ -11,3 +11,18 @@ slurm-*.out
 assembly_qc/results/final_taxonomy_assembly/flye/20-repeat/read_alignment_dump
 assembly_qc/results/final_taxonomy_assembly/flye/20-repeat/repeat_graph_dump
 assembly_qc/results/final_taxonomy_assembly/flye/20-repeat/*.fasta
+# Large sequencing/alignment intermediates
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bai
+*.csi
+*.sam
+*.cram
+**/workflow-output/porechop_abi/
+**/workflow-output/work/
+**/workflow/work/
+**/workflow/tmp/
+**/conda/

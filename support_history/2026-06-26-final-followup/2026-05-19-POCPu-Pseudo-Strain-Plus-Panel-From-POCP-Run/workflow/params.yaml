@@ -1,0 +1,4 @@
+input: /mount/britton/Jose/Jobs/Jason/2026-05-19-POCPu-Psuedo-Strain-Plus-Panel-From-POCP-Run/data/genomes
+outdir: /mount/britton/Jose/Jobs/Jason/2026-05-19-POCPu-Psuedo-Strain-Plus-Panel-From-POCP-Run/workflow-output/consprot
+output: /mount/britton/Jose/Jobs/Jason/2026-05-19-POCPu-Psuedo-Strain-Plus-Panel-From-POCP-Run/workflow-output/consprot
+publish_dir_mode: copy

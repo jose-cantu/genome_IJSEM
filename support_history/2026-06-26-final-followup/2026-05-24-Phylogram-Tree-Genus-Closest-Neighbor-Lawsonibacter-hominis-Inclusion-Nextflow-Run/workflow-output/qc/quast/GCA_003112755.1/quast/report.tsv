@@ -1,0 +1,23 @@
+Assembly	GCA_003112755.1
+# contigs (>= 0 bp)	7
+# contigs (>= 1000 bp)	7
+# contigs (>= 5000 bp)	7
+# contigs (>= 10000 bp)	7
+# contigs (>= 25000 bp)	6
+# contigs (>= 50000 bp)	4
+Total length (>= 0 bp)	4282156
+Total length (>= 1000 bp)	4282156
+Total length (>= 5000 bp)	4282156
+Total length (>= 10000 bp)	4282156
+Total length (>= 25000 bp)	4259157
+Total length (>= 50000 bp)	4170039
+# contigs	7
+Largest contig	3503692
+Total length	4282156
+GC (%)	58.38
+N50	3503692
+N90	431489
+auN	2919652.2
+L50	1
+L90	2
+# N's per 100 kbp	0.00

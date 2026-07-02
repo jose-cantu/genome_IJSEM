@@ -198,7 +198,28 @@ Genus-placement phylogeny workflow and outputs.
 ### `docs/`
 Repository-level provenance notes.
 
+### `support_history/` 
+Final follow up analysis added. 
+
+`support_history/2026-06-26-final-followup` contains the following things:
+- Bakta functional annotation screen across Psuedo and selected reference genomes. 
+- POCPu / conspot genus neighborhood comparison. 
+- Expanded bac120 phylogeny including Lawsonbacter hominis NSJ-51.
+
+These analysis support the final interpretation that strain Pseudo is a candidate novel species in the Vermiculatibacterium lineage, with additional functional and genus boundary checks retained for provenance. 
+
 ## What is finalized vs still being curated
+
+### Finalized enough for repo provenance
+- workflow backbone organization
+- selected taxonomy assembly summary
+- TYGS/dDDH evidence
+- EzAAI module
+- ANI provenance split into old-success vs current-failed
+- genus phylogeny workflow/results staging
+
+### Still under active scientific curation
+- All finished on my end. 
 
 ### Finalized Analysis Modules 
 
@@ -210,13 +231,6 @@ Repository-level provenance notes.
 - TYGS genome and 16S GBDP phylograms as supplementary context
 - software version and conda-environment provenance records
 - Methods/Results draft prepared for collaborator review
-
-### Remaining decisions outside the repo 
-
-The main remaining issue is nomenclatural rather than computational. Strain Pseudo is supported as a candidate novel species with the provisional "Vermiculatibacterium agrestimuris" lineage, but "Vermiculatibacterium" is not currently validly published. Therefore, formal naming depends on selected by my collaborator:
-
-a) pursue formal nomenclature by validating and coordinating with original authors of "Vermiculatibacterium"; or 
-b) submit the work as a taxgenomic/phylogenomic characterization of strain Pseduo, with formal naming deferred pending validation or revision of that genus-level lineage. 
 
 ## Provenance principle
 
