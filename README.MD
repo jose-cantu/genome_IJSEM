@@ -1,26 +1,30 @@
 # genome_IJSEM
 
-Genome-taxonomy and manuscript-support repository for **Strain Pseudo**, a candidate novel taxon within **Oscillospiraceae**.
+Genome-taxonomy and manuscript-support repository for **Strain Vermiculatibacterium intestinale**, a candidate novel taxon within **Oscillospiraceae**.
 
 ## Project goal
 
-Generate a publication-grade genome assembly for Strain Pseudo and evaluate whether it represents a **novel species** and potentially a **novel genus** using genome-based taxonomy workflows aligned with IJSEM expectations.
+Generate a publication-grade genome assembly for Strain Vermiculatibacterium intestinale and evaluate whether it represents a **novel species** and potentially a **novel genus** using genome-based taxonomy workflows aligned with IJSEM expectations.
 
 ## Current final status
 
-This repository is now finalized as a manuscript-support and provenance repository for the current Pseudo genome taxonomy analysis. All major analysis needed for the current draft has been processed and staged. 
+This repository is now finalized as a manuscript-support and provenance repository for the current Vermiculatibacterium intestinale genome taxonomy analysis. All major analysis needed for the current draft has been processed and staged.
+
+“Strain Pseudo” is the historical identifier for the isolate called “Vermiculatibacterium intestinale” in the manuscript. So any reference for "Pseudo" in my scripts know thats in reference to the name V. intestinale. 
 
 ## Evidence hierarchy
 
 Species-level novelty is evaluated primarily with TYGS/dDDH comparisons to type-strain genomes. TYGS classified the query genome as a potential new species, and all dDDH values were far below the 70% species boundary.
 
-Genus-level placement is evaluated using EzAAI plus a curated bac120/IQ-TREE phylogeny. The final genus-claim tree will use a reduced type-strain/type-species anchor set to compare Pseudo against the nomenclatural anchors of neighboring validly published genera, while retaining "Vermiculatibacterium agrestimuris" as biologically important provisional lineage context.
+Genus-level placement is evaluated using EzAAI plus a curated bac120/IQ-TREE phylogeny. The final genus-claim tree uses a reduced type-strain/type-species anchor set to compare Vermiculatibacterium intestinale against the nomenclatural anchors of neighboring validly published genera, while retaining "Vermiculatibacterium agrestimuris" as biologically important provisional lineage context.
 
 The broader TYGS-neighbor bac120 tree is retained as nearest-neighbor context, not as the primary formal genus-claim tree.
 
 ### Best assembly currently used for taxonomy comparisons
 
 The current assembly used for downstream taxonomy comparisons is `assembly.polished.fasta`.
+
+`assembly_qc/results/final_taxonomy_assembly/flye/assembly.polished.fasta` 
 
 **Selected taxonomy assembly**
 - Selected as the current best assembly for taxonomy comparisons
@@ -37,7 +41,7 @@ The current assembly used for downstream taxonomy comparisons is `assembly.polis
 - L50: **1**
 - L90: **2**
 - Ns per 100 kbp: **0.00**
-- CheckM completeness: **98.66%**
+- CheckM completeness: **98.32%**
 - CheckM contamination: **0.67%**
 
 **Important assembly provenance note**
@@ -46,7 +50,7 @@ This repository uses the `2025-09-22` workflow as the **assembly/QC/taxonomy wor
 ## Taxonomic interpretation summary
 
 ### Placement
-- GTDB-Tk places Strain Pseudo in **Oscillospiraceae**
+- GTDB-Tk places Strain Vermiculatibacterium intestinale in **Oscillospiraceae**
 - GTDB-Tk places it near placeholder genus **`g__Marseille-P3106`**
 
 ### Species-level evidence
@@ -88,8 +92,6 @@ rather than the initial Marseille-based ANI screen alone.
 
 ## Genome closure status
 
-## Genome closure status
-
 The genome is **not fully closed**, but the current assembly is still a **high-quality draft suitable for taxonomy-focused analysis**.
 
 Current evidence indicates that closure is being limited by **long repeat structure** rather than by poor overall genome quality. Based on graph inspection and downstream review, two major contigs appear to be separated by repeat regions of approximately **~70 kb** and **~140 kb**. Resolving those repeats would require multiple long ONT reads that span the repeat plus unique flanking sequence on both sides.
@@ -124,13 +126,13 @@ Multiple assembly strategies were explored:
 
 The selected assembly used for taxonomy comparisons remains strong by the metrics most relevant to IJSEM-style genome quality assessment:
 
-- Assembly size: **2,617,187 bp**
-- GC: **59.52%**
+- Assembly size: **2,575,873 bp**
+- GC: **59.68%**
 - Contigs: **6**
 - Largest contig: **1,329,041 bp**
 - N50: **1,329,041**
 - L50: **1**
-- CheckM completeness: **98.66%**
+- CheckM completeness: **98.32%**
 - CheckM contamination: **0.67%**
 - Barrnap-extracted 16S copies: **2**, each **1,529 bp**
 
@@ -188,7 +190,7 @@ ANI provenance and workflow history.
 ### `genus_identity/aai/`
 EzAAI workflow and outputs.
 - `workflow/` = AAI pipeline files
-- `results/` = `Pseudo_vs_refs.aai.tsv`, `aai.tsv`, `aai.nwk`
+- `results/` = `Vermiculatibacterium intestinale_vs_refs.aai.tsv`, `aai.tsv`, `aai.nwk`
 
 ### `genus_identity/phylogeny/`
 Genus-placement phylogeny workflow and outputs.
@@ -206,7 +208,7 @@ Final follow up analysis added.
 - POCPu / conspot genus neighborhood comparison. 
 - Expanded bac120 phylogeny including Lawsonbacter hominis NSJ-51.
 
-These analysis support the final interpretation that strain Pseudo is a candidate novel species in the Vermiculatibacterium lineage, with additional functional and genus boundary checks retained for provenance. 
+These analysis support the final interpretation that strain Vermiculatibacterium intestinale is a candidate novel species in the Vermiculatibacterium lineage, with additional functional and genus boundary checks retained for provenance. 
 
 ## What is finalized vs still being curated
 
